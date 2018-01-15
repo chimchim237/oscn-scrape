@@ -1,14 +1,17 @@
+# import libraries
 from bs4 import BeautifulSoup
-
 import requests
 
-url = raw_input("Enter a website to extract the URL's from: ")
+# specify the url
+page = requests.get('http://tulsawebdesign.com/oscn/oscn.html')
+soup = BeautifulSoup(page.text, 'html.parser')
 
-r  = requests.get("http://" +url)
+case_list = soup.find(class_='caseCourtTable')
+case_list_items = case_list.find_all('a')
 
-data = r.text
-
-soup = BeautifulSoup(data)
-
-for link in soup.find_all('a'):
-    print(link.get('href'))
+# Use .contents to pull out the <a> tag's children
+for case_list in case_list_items:
+    names = case_list.contents[0]
+    links = 'http://www.oscn.net/dockets/' + case_list.get('href')
+    print(links)
+    print(names)

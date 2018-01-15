@@ -1,10 +1,11 @@
-# open-webpage.py
+# trial-content.py
 
 import urllib2
+from lessons import obo
 
 url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
 
 response = urllib2.urlopen(url)
-webContent = response.read()
+HTML = response.read()
 
-print(webContent[0:300])
+print(obo.stripTags(HTML))
