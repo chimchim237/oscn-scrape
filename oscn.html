@@ -1,0 +1,2284 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en-US" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en-US" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="height: 100%;" lang="en-US"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+    OSCN Search Results
+  </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="oscn_files/normalize.css">
+        <link rel="stylesheet" href="oscn_files/main.css">
+        <link rel="stylesheet" href="oscn_files/bootstrap-2.css">
+        <link rel="stylesheet" href="oscn_files/oscn-navigation.css">
+        <link rel="stylesheet" href="oscn_files/oscn-footer.css">
+
+<style> /* test */
+.caseCourtTable { width:100%; margin-bottom: 1px;  position: relative;}
+.caseCourtHeader {  
+	text-align: left; 
+	font-weight: bold; 
+	position: relative;
+}
+.resultTableHeaders {  background: #f7f7f7; color: #033c60; padding: 2px 5px; margin: 0;}
+.caseCourtHeader {
+	background: #033c60;
+	color: white;
+	margin: 0;
+	padding: 6px;
+	font-size: 18px;
+	text-transform: uppercase;
+	position: relative;	
+}
+.resultTableHeaders { font-size: 15px; text-align: left; }
+.resultTableHeaders a { display: inline-block; /* background-color: yellow; */ }
+.resultTableHeaders th { padding: 4px 3px; vertical-align: top; }
+.caseNo { padding-left: 5px; }
+.resultTableHeaders { border-bottom: thin solid #e1e1e1; }
+.resultTableRow { border-top: thin solid #e1e1e1; }
+.resultTableRow td { font-size: 11px; padding: 4px 3px; color: #033c60; vertical-align: top;}
+.resultTableRow  a { color: #0073cf; }
+.resultTableRow  a:visited { color: #033c60; }
+.timeTaken { position: absolute; right: 5px; font-size: 14px; }
+.moreResults { color: #666666; font-size: 12px; background: white; }
+.resultsTitle { 
+	color: White; 
+	background-color: #0073cf; 
+	border-bottom: 2px solid white; 
+	border-top: 2px solid white; 
+	font-size: 18px; 
+	text-transform: uppercase;
+	font-weight: bold; 
+	padding: 0; 
+	margin: 0; 
+	padding: 5px 5px;
+	text-align: center;
+	}
+.resultsTitle span a {color: #e1e1ee; font-size: 11px;}
+.resultsTitle span a:visited {color: #e1e1ee;}
+.resultsTitle span a:hover {color: #f7f7f7;}
+
+.shortStyle { text-transform: uppercase; }
+
+.evenRow { background-color: #f7f7f7; }
+.oddRow { background-color: white; }</style>
+        <script async="" src="oscn_files/analytics.js"></script><script src="oscn_files/modernizr-2.js"></script>
+		<!--[if lt IE 9]>	
+		<script src="/assets/js/respond.min.js"></script>
+		<script>
+		window.onload = function() {
+			setTimeout(function(){				
+				var height = $(".footer").outerHeight(true);
+				$("#oscn-content").css("padding-bottom", function(){
+					return height;
+				});}, 2000);
+		}
+		</script>
+		<![endif]-->
+<!-- /JAVASCRIPT_TOP/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-54280338-1', {'sampleRate': 50});
+ga('send', 'pageview');
+</script>
+    </head>
+    <body style="height: 100%;">
+	<div class="wrapper" style="min-height: 100%; position: relative; padding: 0px; margin: 0px;">
+<!-- /ERRORMESSAGE/ -->
+		<div class="header">
+			<div class="accessibility">
+				<a href="#oscn-content">Skip to Main Content</a>
+				<a href="http://www.oscn.net/v4/accessibility/">Accessibility Statement</a>
+			</div>
+			<div class="navigation-tophat">
+				<div class="sized">
+					<div class="left">
+						<ul>
+							<li><a href="http://www.oscn.net/applications/oscn/SimpleHelp.asp?HelpContextID=">Help</a></li>
+							<li><a href="http://www.oscn.net/applications/oscn/SimpleHelp.asp?HelpContextID=84">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="right">
+						<ul>
+							<!--<li><a href="">e-filing</a></li>-->
+							<li><a href="https://pay.oscn.net/epayments/">e-payments</a></li>
+							<li><a href="http://www.oscn.net/jobs/">Careers</a></li>
+							<!-- <li class="site-search no-border">
+								<form class="search-form" method="get" action="/search/search.aspx">
+									<div class="search-container">
+									<select class="template-dropdown" style="display: none;">
+										<option class="template-option"></option>
+									</select>	
+									<select class="search-dropdown" name="t">
+										<optgroup label="Legal Research">
+											<option value="citation">By Citation (QuickCite)</option>
+											<option value="judge">By Judge</option>
+											<option value="caselaw">Case Law (full-text)</option>
+											<option value="statutes">Statutes &amp; Rules (full-text)</option>
+											<option value="library">All Oklahoma Materials (full-text)</option>
+										</optgroup>
+										<optgroup label="Court Records">
+											<option selected="selected" value="party">By Party Name</option>
+											<option value="business">By Business Name</option>
+											<option value="casenumber">By Case Number</option>
+											<option value="traffic">By Traffic Citation</option>
+										</optgroup>											
+									</select></div><!--
+									<input class="search-input" type="text" value="Search" name="q"></input><!-- 
+									<button class="search-button" type="submit" value="Go!"></button>
+								</form>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="navigation-spectacles sized">
+				<div class="navigation-utility">
+					<div class="brand"><a href="http://www.oscn.net/"><img id="logo" class="screen-logo" alt="OSCN" src="oscn_files/logo.jpg"><img class="print-logo" alt="" src="oscn_files/logo-bw.jpg"></a></div>
+					<div class="toggle" style="display: none;"><button type="button" data-toggle="navigation"><span class="sr-only">toggle navigation</span></button></div>
+				</div>
+				<nav role="navigation">
+					<ol class="nav-menu">
+						<li class="nav-item" id="home"><a href="http://www.oscn.net/v4/" id="accessible-megamenu-1515985428276-1">Home</a></li>
+						<li class="nav-item" id="courts_menu"><a href="http://www.oscn.net/courts/" id="accessible-megamenu-1515985428320-2" aria-haspopup="true" aria-controls="accessible-megamenu-1515985428320-3" aria-expanded="false">Courts</a><div class="sub-nav container-fluid" style="display: block;" id="accessible-megamenu-1515985428320-3" role="group" aria-expanded="false" aria-hidden="true" aria-labelledby="accessible-megamenu-1515985428320-2"><ol class="row-fluid"><li class="sub-nav-group span4"><h3>Appellate Courts</h3><ol><li><a class="pdf-link" target="_blank" href="http://www.oscn.net/static/osc-ojs-brochure-online.pdf">About the Courts<span class="sr-only">PDF</span></a></li><li><a href="http://www.oscn.net/oscn/schome/">Supreme Court</a></li><li><a href="http://www.okcca.net/">Court of Criminal Appeals</a></li><li><a class="pdf-link" target="_blank" href="http://www.oscn.net/static/osc-ojs-brochure-online.pdf">Court of Civil Appeals<span class="sr-only">PDF</span></a></li></ol><h3>Other Courts</h3><a href="http://www.owcc.state.ok.us/">Workers' Compensation Court of Existing Claims</a><h3>Judicial Biographies</h3><ol><li><a href="http://www.oscn.net/static/osc-ojs-brochure-online.pdf#page=3" class="pdf-link" target="_blank">Oklahoma Supreme Court<span class="sr-only">PDF</span></a></li><li><a href="http://www.oscn.net/static/osc-ojs-brochure-online.pdf#page=53" class="pdf-link" target="_blank">Oklahoma Court of Criminal Appeals<span class="sr-only">PDF</span></a></li><li><a href="http://www.oscn.net/static/osc-online-judges-coca-2014.pdf" class="pdf-link" target="_blank">Oklahoma Court of Civil Appeals<span class="sr-only">PDF</span></a></li>		<li><a href="http://www.oscn.net/static/osc-ojs-brochure-online.pdf#page=64" class="pdf-link" target="_blank">Oklahoma Trial Court<span class="sr-only">PDF</span></a></li><li><a href="http://www.oscn.net/static/osc-online-judges-workers-compensation-2014.pdf" class="pdf-link" target="_blank">Oklahoma Workers' Compensation<span class="sr-only">PDF</span></a></li></ol></li><li class="sub-nav-group span8"><h3>District Courts</h3><ol class="courts-list"><li class="courts-group"><h4 class="sr-only">Adair through Cimarron</h4><ol class="county-list"><li class="courtListitem group1"><a href="http://www.oscn.net/courts/adair">Adair</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/alfalfa">Alfalfa</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/atoka">Atoka</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/beaver">Beaver</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/beckham">Beckham</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/blaine">Blaine</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/bryan">Bryan</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/caddo">Caddo</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/canadian">Canadian</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/carter">Carter</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/cherokee">Cherokee</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/choctaw">Choctaw</a></li><li class="courtListitem group1"><a href="http://www.oscn.net/courts/cimarron">Cimarron</a></li></ol></li><li class="courts-group"><h4 class="sr-only">Cleveland through Grady</h4><ol class="county-list"><li class="courtListitem group2"><a href="http://www.oscn.net/courts/cleveland">Cleveland</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/coal">Coal</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/comanche">Comanche</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/cotton">Cotton</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/craig">Craig</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/creek">Creek</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/custer">Custer</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/delaware">Delaware</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/dewey">Dewey</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/ellis">Ellis</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/garfield">Garfield</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/garvin">Garvin</a></li><li class="courtListitem group2"><a href="http://www.oscn.net/courts/grady">Grady</a></li></ol></li><li class="courts-group"><h4 class="sr-only">Grant through Latimer</h4><ol class="county-list"><li class="courtListitem group3"><a href="http://www.oscn.net/courts/grant">Grant</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/greer">Greer</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/harmon">Harmon</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/harper">Harper</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/haskell">Haskell</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/hughes">Hughes</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/jackson">Jackson</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/jefferson">Jefferson</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/johnston">Johnston</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/kay">Kay</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/kingfisher">Kingfisher</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/kiowa">Kiowa</a></li><li class="courtListitem group3"><a href="http://www.oscn.net/courts/latimer">Latimer</a></li></ol></li><li class="courts-group"><h4 class="sr-only">LeFlore through Noble</h4><ol class="county-list"><li class="courtListitem group4"><a href="http://www.oscn.net/courts/leflore">LeFlore</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/lincoln">Lincoln</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/logan">Logan</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/love">Love</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/major">Major</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/marshall">Marshall</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/mayes">Mayes</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/mcclain">McClain</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/mccurtain">McCurtain</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/mcintosh">McIntosh</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/murray">Murray</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/muskogee">Muskogee</a></li><li class="courtListitem group4"><a href="http://www.oscn.net/courts/noble">Noble</a></li></ol></li><li class="courts-group"><h4 class="sr-only">Nowata through Roger Mills</h4><ol class="county-list"><li class="courtListitem group5"><a href="http://www.oscn.net/courts/nowata">Nowata</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/okfuskee">Okfuskee</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/oklahoma">Oklahoma</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/okmulgee">Okmulgee</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/osage">Osage</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/ottawa">Ottawa</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/pawnee">Pawnee</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/payne">Payne</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/pittsburg">Pittsburg</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/pontotoc">Pontotoc</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/pottawatomie">Pottawatomie</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/pushmataha">Pushmataha</a></li><li class="courtListitem group5"><a href="http://www.oscn.net/courts/roger-mills">Roger Mills</a></li></ol></li><li class="courts-group"><h4 class="sr-only">Rogers through Woodward</h4><ol class="county-list"><li class="courtListitem group6"><a href="http://www.oscn.net/courts/rogers">Rogers</a></li><li class="courtListitem group6"><a href="http://www.oscn.net/courts/seminole">Seminole</a></li><li class="courtListitem group6"><a href="http://www.oscn.net/courts/sequoyah">Sequoyah</a></li><li class="courtListitem group6"><a href="http://www.oscn.net/courts/stephens">Stephens</a></li><li class="courtListitem group6"><a href="http://www.oscn.net/courts/texas">Texas</a></li><li class="courtListitem group6"><a href="http://www.oscn.net/courts/tillman">Tillman</a></li><li class="courtListitem group6"><a href="http://www.oscn.net/courts/tulsa">Tulsa</a></li><li class="courtListitem group6"><a href="http://www.oscn.net/courts/wagoner">Wagoner</a></li><li class="courtListitem group6"><a href="http://www.oscn.net/courts/washington">Washington</a></li><li class="courtListitem group6"><a href="http://www.oscn.net/courts/washita">Washita</a></li><li class="courtListitem group6"><a href="http://www.oscn.net/courts/woods">Woods</a></li><li class="courtListitem group6"><a href="http://www.oscn.net/courts/woodward">Woodward</a></li></ol></li></ol></li></ol></div></li>
+						<li class="nav-item" id="decisions"><a href="http://www.oscn.net/decisions/" id="accessible-megamenu-1515985428328-4" aria-haspopup="true" aria-controls="accessible-megamenu-1515985428328-5" aria-expanded="false">Decisions</a><div class="sub-nav container-fluid" style="display: block;" id="accessible-megamenu-1515985428328-5" role="group" aria-expanded="false" aria-hidden="true" aria-labelledby="accessible-megamenu-1515985428328-4"><ol class="row-fluid"><li class="sub-nav-group span4"><h3>Supreme Court of Oklahoma</h3><ol><li><a href="http://www.oscn.net/decisions/ok/7">New Decisions</a></li><li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKCSSC">View Decisions by Year</a></li></ol></li><li class="sub-nav-group span4"><h3>Court of Criminal Appeals</h3><ol><li><a href="http://www.oscn.net/decisions/ok-cr/7">New Decisions</a></li><li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKCSCR">View Decisions by Year</a></li></ol></li><li class="sub-nav-group span4"><h3>Court of Civil Appeals</h3><ol><li><a href="http://www.oscn.net/decisions/ok-civ-app/7">New Decisions</a></li><li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKCSCV">View Decisions by Year</a></li></ol></li></ol></div></li>
+						<li class="nav-item" id="programs"><a href="http://www.oscn.net/v4/programs/" id="accessible-megamenu-1515985428333-6" aria-haspopup="true" aria-controls="accessible-megamenu-1515985428333-7" aria-expanded="false">Programs</a><div class="sub-nav container-fluid" style="display: block;" id="accessible-megamenu-1515985428333-7" role="group" aria-expanded="false" aria-hidden="true" aria-labelledby="accessible-megamenu-1515985428333-6"><ol class="row-fluid"><li class="sub-nav-group span4"><h3>Court Programs</h3><ol><li><a target="_blank" href="http://www.thesovereigntysymposium.com/splash.aspx">The Sovereignty Symposium</a></li><li><a href="http://www.oscn.net/static/adr/default.aspx">Alternative Dispute Resolution</a></li><li><a href="http://www.oscn.net/static/adr/default.aspx">Early Settlement Mediation</a></li><li><a href="http://www.oscn.net/Sites/CourtImprovement/default.aspx">Children's Court Improvement Program (CIP)</a></li><li><a href="http://www.oscn.net/static/forms/aoc_forms/interpreter.asp">Certified Courtroom Interpreters</a></li><li><a href="http://www.oscn.net/static/forms/aoc_forms/csr.asp">Certified Shorthand Reporters</a></li><li><a href="http://www.oscn.net/jnc/">Judicial Nominating Commission</a></li></ol>										</li><li class="sub-nav-group span4"><h3>Access To Justice</h3><ol><li><a href="http://www.oscn.net/static/access%20to%20justice%20members.pdf" class="pdf-link" target="_blank">Commisioners<span class="sr-only">PDF</span></a></li><li><a href="http://www.oscn.net/static/forms/aoc_forms/protectiveorders.asp">Protective Orders</a></li><li><a href="http://www.oscn.net/static/forms/childsupport.asp">Child Support</a></li><li><a class="pdf-link" target="_blank" href="http://www.oscn.net/forms/aoc_form/adobe/dom.-standard-visit-sch.-advis.%20gdelns.pdf">Standard Visitation Schedule &amp; Advisory Guidelines<span class="sr-only">PDF</span></a></li><li><a target="_blank" class="external-link" href="http://oklaw.org/legal-aid-self-help-forms">Legal Aid Self-Help Forms</a></li></ol></li><li class="sub-nav-group span4"><h3>Accessibility</h3><ol><li><a href="http://www.oscn.net/pages/accessibility">Accessibility Statement</a></li></ol></li></ol></div></li>
+						<li class="nav-item" id="news"><a href="http://www.oscn.net/news/" id="accessible-megamenu-1515985428335-8" aria-haspopup="true" aria-controls="accessible-megamenu-1515985428335-9" aria-expanded="false">News</a><div class="sub-nav container-fluid" style="display: block;" id="accessible-megamenu-1515985428335-9" role="group" aria-expanded="false" aria-hidden="true" aria-labelledby="accessible-megamenu-1515985428335-8"><ol class="row-fluid"><li class="sub-nav-group span3"><h3>News</h3><ol><li><a href="http://www.oscn.net/news/">Recent News</a></li><li><a href="http://www.oscn.net/news/archive">Archived News</a></li></ol></li></ol></div></li>
+						<li class="nav-item" id="legal-research"><a href="http://www.oscn.net/applications/oscn/start.asp?viewType=LIBRARY" id="accessible-megamenu-1515985428348-10" aria-haspopup="true" aria-controls="accessible-megamenu-1515985428348-11" aria-expanded="false">Legal Research</a><div class="sub-nav container-fluid" style="display: block;" id="accessible-megamenu-1515985428348-11" role="group" aria-expanded="false" aria-hidden="true" aria-labelledby="accessible-megamenu-1515985428348-10"><ol class="row-fluid"><li class="sub-nav-group span4"><h3>Legal Research</h3><ol><li><a href="http://www.oscn.net/applications/oscn/start.asp?viewType=LIBRARY&amp;p=1">All Legal Research</a></li><!--<li><a href="/applications/oscn/judges.asp">List of Appellate Opinions by Judge</a></li>--><li><a href="http://www.oscn.net/applications/oscn/start.asp?viewType=LIBRARY&amp;p=2">Federal Legal Materials</a></li><li><a href="http://www.oscn.net/applications/oscn/index.asp?ftdb=FDCS&amp;level=1">Indian Territory Cases</a></li></ol><h3>Search</h3><ol><li><a href="http://www.oscn.net/applications/oscn/search.asp?simple=true">Search</a></li><li><a href="http://www.oscn.net/applications/oscn/search.asp">Advanced Search</a></li><li><a href="http://www.oscn.net/applications/oscn/QuickCase.asp">Batch Citator</a></li></ol></li><li class="sub-nav-group span4"><h3>Oklahoma Law</h3><ol><li><a href="http://www.oscn.net/applications/oscn/index.asp?ftdb=STOKCS&amp;level=1">Appellate Decisions</a></li><li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKCSSC&amp;level=1">Supreme Court Decisions</a></li><li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKCSCR&amp;level=1">Court of Criminal Appeals Decisions</a></li><li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKCSCV&amp;level=1">Court of Civil Appeals Decisions</a></li><li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKCSJU&amp;level=1">Court on the Judiciary Opinions</a></li><li><a href="http://www.oscn.net/applications/oscn/index.asp?ftdb=STOKST&amp;level=1">Statutes</a></li><li><a href="http://www.oscn.net/applications/oscn/index.asp?ftdb=STOKLG&amp;level=1">Session Laws</a></li><li><a href="http://www.oscn.net/applications/oscn/index.asp?ftdb=STOKCN&amp;level=1">Constitution</a></li><li><a href="http://www.oscn.net/applications/oscn/index.asp?ftdb=STOKRU&amp;level=2">Court Rules</a></li><!--<li><a href="/applications/oscn/Index.asp?ftdb=STOKEF&level=1">Rules for e-Filing in Selected Pilot Courts</a></li>--><li><a target="_blank" href="https://www.sos.ok.gov/oar/Default.aspx">Administrative Code and Oklahoma Register (Secretary of State)</a></li></ol></li><li class="sub-nav-group span4"><h3>Oklahoma Legal Materials</h3><ol><li><a href="http://www.oscn.net/applications/oscn/index.asp?ftdb=STOKJU&amp;level=1">Uniform Jury Instructions</a></li><li><a href="http://www.oscn.net/static/forms/start.asp">Legal Forms</a></li><li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKRP&amp;level=1">Registry of Frivolous or Malicious Appeals</a></li><li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKFF&amp;level=1">Full Faith and Credit of Tribal Courts</a></li><li><a href="http://www.oscn.net/applications/oscn/index.asp?ftdb=STOKAG&amp;level=1">Attorney General Opinions</a></li><li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKCSJE&amp;level=1">Judicial Ethics Advisory Panel Opinions</a></li><li><a href="http://www.oscn.net/applications/oscn/index.asp?ftdb=STOKFB&amp;level=1">Fee &amp; Bond Schedules</a></li><li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKAP&amp;level=1">Fee and Copy Schedules for Appellate Courts</a></li><li><a href="http://www.oscn.net/applications/oscn/index.asp?ftdb=STOKIN&amp;level=1">Interest on Judgments</a></li></ol></li></ol></div></li>
+						<li class="nav-item" id="court-records"><a href="http://www.oscn.net/dockets/" id="accessible-megamenu-1515985428357-12" aria-haspopup="true" aria-controls="accessible-megamenu-1515985428357-13" aria-expanded="false">Court Records</a><div class="sub-nav container-fluid" style="display: block;" id="accessible-megamenu-1515985428357-13" role="group" aria-expanded="false" aria-hidden="true" aria-labelledby="accessible-megamenu-1515985428357-12"><ol class="row-fluid"><li class="sub-nav-group span3"><h3>Search</h3><ol><li><a href="http://www.oscn.net/dockets/Search.aspx">Search OSCN Court Records</a></li><li><a target="_blank" href="http://www1.odcr.com/">Search Non-OSCN Court Records</a></li></ol></li><li class="sub-nav-group span3"><h3>Court Records</h3><ol><li><a href="http://www.oscn.net/applications/oscn/simplehelp.asp?helpcontextid=5">Available Court Records</a></li><!-- <li><a href="#">Look-up Case number</a></li> --><li><a href="http://www.oscn.net/applications/oscn/simplehelp.asp?helpcontextid=4">Court Records Help</a></li></ol></li><li class="sub-nav-group span6"><h3>Court Reports</h3><ol><li><a href="http://www.oscn.net/applications/oscn/report.asp?report=rptCivilCasesWithTrialDispositionsMAIN">Civil Cases with Trial Dispositions</a></li><li><a href="http://www.oscn.net/applications/oscn/report.asp?report=WebJudicialDocketJudgeAll">Daily Docket - All Events - Specific Judge</a></li><li><a href="http://www.oscn.net/applications/oscn/report.asp?report=WebJudicialDocketJudgeCaseTypeAll">Daily Docket - All Events - Specific Judge - Specific Case Type</a></li><li><a href="http://www.oscn.net/applications/oscn/report.asp?report=WebJudicialDocketCaseTypeAll">Daily Docket - All Events - Specific Case Type</a></li><li><a href="http://www.oscn.net/applications/oscn/report.asp?report=WebJudicialDocketEventAll">Daily Docket - Specific Event</a></li><li><a href="http://www.oscn.net/applications/oscn/report.asp?report=WebJudicialDocketJudgeEventAll">Daily Docket - Specific Event - Specific Judge</a></li><li><a href="http://www.oscn.net/applications/oscn/report.asp?report=WebJudicialDocketJudgeCaseTypeEvent">Daily Docket - Specific Event - Specific Judge - Specific Case Type</a></li><li><a href="http://www.oscn.net/applications/oscn/report.asp?report=DailyFilings">Daily Filings by County</a></li></ol></li></ol></div></li>
+						<li class="nav-item" id="quick-links"><a href="http://www.oscn.net/v4/quicklinks/" id="accessible-megamenu-1515985428369-14" aria-haspopup="true" aria-controls="accessible-megamenu-1515985428369-15" aria-expanded="false">Quick Links</a><div class="sub-nav container-fluid" style="display: block;" id="accessible-megamenu-1515985428369-15" role="group" aria-expanded="false" aria-hidden="true" aria-labelledby="accessible-megamenu-1515985428369-14"><ol class="row-fluid"><li class="sub-nav-group span3"><h3>Forms</h3><ol><li><a href="http://www.oscn.net/static/forms/scforms.asp">Supreme Court and Court of Civil Appeals</a></li><li><a target="_blank" href="http://www.okcca.net/forms/index.html">Court of Criminal Appeals</a></li><li><a href="http://www.oscn.net/static/forms/AOCforms.asp">District Courts (Administrative Office of the Courts)</a></li><li><a href="http://www.oscn.net/static/forms/districtcover.asp">District Courts of Oklahoma Cover Sheets</a></li><li><a href="http://www.oscn.net/static/forms/childsupport.asp">Child Support</a></li><li><a class="pdf-link" target="_blank" href="http://www.oscn.net/forms/aoc_form/adobe/dom.-standard-visit-sch.-advis.%20gdelns.pdf">Standard Visitation Schedule &amp; Advisory Guidelines<span class="sr-only">PDF</span></a></li><li><a href="http://www.oscn.net/UniformOrders/default.aspx">Juvenile Courts</a></li><li><a target="_blank" href="http://www.owcc.state.ok.us/">Workers' Compensation</a></li><li><a target="_blank" href="http://www.sos.state.ok.us/">Oklahoma Secretary of State</a></li><li><a target="_blank" class="external-link" href="http://oklaw.org/legal-aid-self-help-forms">Legal Aid Self-Help Forms</a></li><li><a href="http://www.oscn.net/static/forms/aoc_forms/interpreter.asp">Certified Courtroom Interpreters</a></li><li><a href="http://www.oscn.net/static/forms/aoc_forms/csr.asp">Certified Shorthand Reporters</a></li></ol></li><li class="sub-nav-group span3"><h3>Statewide Registries</h3><ol><li><a href="http://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=468488">Statewide Registry of Licensed Private Process&nbsp;Servers</a></li><li><a href="http://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=380115">Registry of Frivolous or Malicious Appeals</a></li><li><a href="http://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=458214">Full Faith and Credit of Tribal Courts</a></li><li><a href="http://www.oscn.net/static/forms/aoc_forms/interpreter.asp">Certified Courtroom Interpreters</a></li><li><a href="http://www.oscn.net/static/forms/aoc_forms/csr.asp">Certified Shorthand Reporters</a></li><li><a target="_blank" href="http://sors.doc.state.ok.us/svor/f?p=103:1:231254177081259">Sex Offender Registry</a></li><li><a class="pdf-link" target="_blank" href="http://www.ok.gov/obndd/documents/METH09-22.pdf">Meth Registry<span class="sr-only">PDF</span></a></li></ol><h3>Reports</h3><ol><li><a class="pdf-link" target="_blank" href="http://www.oscn.net/static/annual-report-2016.pdf">Annual Report<span class="sr-only">PDF</span></a></li><li><a href="http://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=468488">Statewide Registry of Licensed Private Process&nbsp;Servers</a></li><li><a href="http://www.oscn.net/dockets/">District Court Reports</a></li><li><a href="http://www.oscn.net/static/divorce-impact-educational-programs-report-FY16.pdf" class="pdf-link" target="_blank">Divorce Impact Educational Program<span class="sr-only">PDF</span></a></li></ol>										</li><li class="sub-nav-group span3"><h3>Self Help</h3><ol><li><a href="http://www.oscn.net/static/forms/aoc_forms/protectiveorders.asp">Protective Orders</a></li><li><a href="http://www.oscn.net/static/forms/childsupport.asp">Child Support</a></li><li><a class="pdf-link" target="_blank" href="http://www.oscn.net/forms/aoc_form/adobe/dom.-standard-visit-sch.-advis.%20gdelns.pdf">Standard Visitation Schedule &amp; Advisory Guidelines<span class="sr-only">PDF</span></a></li><li><a class="external-link" target="_blank" href="http://oklaw.org/legal-aid-self-help-forms">Legal Aid Self-Help Forms</a></li></ol><h3>Related Links</h3><ol><li><a target="_blank" href="http://www.okbar.org/">Oklahoma Bar Association</a></li><li><a target="_blank" href="http://www.oklegislature.gov/">Oklahoma State Legislature</a></li><li><a target="_blank" href="http://www.state.ok.us/">Oklahoma Government Website</a></li><li><a target="_blank" href="https://www.sos.ok.gov/">Oklahoma Secretary of State</a></li><li><a target="_blank" href="http://www.judicialfamilyinstitute.org/">Judicial Family Institute</a></li><li><a target="_blank" href="http://www.ok.gov/governor/">Oklahoma Governor's Office</a></li><li><a target="_blank" href="http://www.okbar.org/public/Courts/CouncilonJudicialComplaints.aspx">Council on Judicial Complaints</a></li></ol></li><li class="sub-nav-group span3"><h3>Help</h3><ol><li><a href="http://www.oscn.net/applications/oscn/SimpleHelp.asp?HelpContextID=4">Court Records Help</a></li><li><a href="http://www.oscn.net/applications/oscn/SimpleHelp.asp?HelpContextID=14">Legal Research</a></li></ol></li></ol></div></li>
+					</ol>
+				</nav>
+			</div>
+		</div>		
+<div id="oscn-content" style="padding-bottom: 259px;"><div class="sized results">
+<div class="resultsTitle">
+        <span style="float: left;"><a href="http://www.oscn.net/dockets/Default.aspx" title="Back to Court Records">Court Records</a></span>
+        Search Results
+        <span style="float: right;"><a href="http://www.oscn.net/dockets/Search.aspx" title="Start a New Search">New Search</a></span>
+</div>
+    
+<table class="caseCourtTable" id="TABLE_1">
+  <caption class="caseCourtHeader">alfalfa&nbsp;County<span class="timeTaken">Found 337 Records&nbsp;in 65ms.</span></caption>
+  <tbody><tr class="resultTableHeaders">
+    <th class="caseNo" scope="col" abbr="case Number" width="15%"><nobr><a href="#" onclick="location.replace('/dockets/Results.aspx?db=alfalfa&amp;FiledDateL=11%2f01%2f2017&amp;FiledDateH=11%2f30%2f2017&amp;sc=CASENUMBER&amp;sd=ASC'); return false;" title="Sort search results by Case&nbsp;Number.">Case&nbsp;Number<img src="oscn_files/information_icon.png" style="width: 12px; height: 12px; padding-left: 5px;" alt="This column is sortable." title="This column is sortable."></a></nobr></th>
+    <th class="caseDateFiled" scope="col" abbr="Date Filed" width="10%"><nobr><a href="#" onclick="location.replace('/dockets/Results.aspx?db=alfalfa&amp;FiledDateL=11%2f01%2f2017&amp;FiledDateH=11%2f30%2f2017&amp;sc=DATEFILED&amp;sd=DESC'); return false;" title="Sort search results by Date Filed in descending order."><em>Date Filed</em><img src="oscn_files/sort_up_icon.png" style="width: 12px; height: 12px; padding-left: 5px;" alt="Sort search results by Date Filed in descending order." title="Sort search results by Date Filed in descending order."></a></nobr></th>
+    <th class="caseStyle" scope="col" abbr="Style" width="48%"><nobr><a href="#" onclick="location.replace('/dockets/Results.aspx?db=alfalfa&amp;FiledDateL=11%2f01%2f2017&amp;FiledDateH=11%2f30%2f2017&amp;sc=CASESTYLE&amp;sd=ASC'); return false;" title="Sort search results by Style.">Style<img src="oscn_files/information_icon.png" style="width: 12px; height: 12px; padding-left: 5px;" alt="This column is sortable." title="This column is sortable."></a></nobr></th>
+    <th class="caseParty" scope="col" abbr="Party"><nobr><a href="#" onclick="location.replace('/dockets/Results.aspx?db=alfalfa&amp;FiledDateL=11%2f01%2f2017&amp;FiledDateH=11%2f30%2f2017&amp;sc=PARTYNAME&amp;sd=ASC'); return false;" title="Sort search results by Found Party.">Found Party<img src="oscn_files/information_icon.png" style="width: 12px; height: 12px; padding-left: 5px;" alt="This column is sortable." title="This column is sortable."></a></nobr></th>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00584&amp;cmid=97656">TR-2017-00584</a></td>
+    <td>11/01/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00584&amp;cmid=97656">STATE OF OKLAHOMA  V. GLENNETTA DAWN LLOYD</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00585&amp;cmid=97657">TR-2017-00585</a></td>
+    <td>11/01/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00585&amp;cmid=97657">STATE OF OKLAHOMA  V. GLENNETTA DAWN LLOYD</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00584&amp;cmid=97656">TR-2017-00584</a></td>
+    <td>11/01/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00584&amp;cmid=97656">STATE OF OKLAHOMA  V. GLENNETTA DAWN LLOYD</a></td>
+    <td>LLOYD, GLENNETTA DAWN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00585&amp;cmid=97657">TR-2017-00585</a></td>
+    <td>11/01/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00585&amp;cmid=97657">STATE OF OKLAHOMA  V. GLENNETTA DAWN LLOYD</a></td>
+    <td>LLOYD, GLENNETTA DAWN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00584&amp;cmid=97656">TR-2017-00584</a></td>
+    <td>11/01/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00584&amp;cmid=97656">STATE OF OKLAHOMA  V. GLENNETTA DAWN LLOYD</a></td>
+    <td>MATHEWS, CARTER (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00585&amp;cmid=97657">TR-2017-00585</a></td>
+    <td>11/01/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00585&amp;cmid=97657">STATE OF OKLAHOMA  V. GLENNETTA DAWN LLOYD</a></td>
+    <td>MATHEWS, CARTER (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00584&amp;cmid=97656">TR-2017-00584</a></td>
+    <td>11/01/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00584&amp;cmid=97656">STATE OF OKLAHOMA  V. GLENNETTA DAWN LLOYD</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00585&amp;cmid=97657">TR-2017-00585</a></td>
+    <td>11/01/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00585&amp;cmid=97657">STATE OF OKLAHOMA  V. GLENNETTA DAWN LLOYD</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00145&amp;cmid=99653">CM-2017-00145</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00145&amp;cmid=99653">STATE OF OKLAHOMA  V. JEREMY DAVID WILLIAMS</a></td>
+    <td>ALFALFA CO. SHERIFF DEPT. (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00035&amp;cmid=94061">CS-2017-00035</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00035&amp;cmid=94061">MIDLAND FUNDING LLC V. JAIDEN  ALLEN</a></td>
+    <td>ALLEN, JAIDEN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00023&amp;cmid=100965">CJ-2017-00023</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00023&amp;cmid=100965">ALLY BANK V. ROBERT FRANKLIN CUNNINGHAM SR, ET. AL.</a></td>
+    <td>ALLY BANK (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00066&amp;cmid=99634">CF-2017-00066</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00066&amp;cmid=99634">STATE OF OKLAHOMA  V. KIMBERLY LA SHAI NABORS</a></td>
+    <td>CHEROKEE POLICE DEPARTMENT (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00067&amp;cmid=99635">CF-2017-00067</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00067&amp;cmid=99635">STATE OF OKLAHOMA  V. KENNETH FELTON NABORS</a></td>
+    <td>CHEROKEE POLICE DEPARTMENT (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00143&amp;cmid=99651">CM-2017-00143</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00143&amp;cmid=99651">STATE OF OKLAHOMA  V. KIMBERLY LA SHAI NABORS</a></td>
+    <td>CHEROKEE POLICE DEPARTMENT (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00144&amp;cmid=99652">CM-2017-00144</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00144&amp;cmid=99652">STATE OF OKLAHOMA  V. KENNETH FELTON NABORS</a></td>
+    <td>CHEROKEE POLICE DEPARTMENT (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00023&amp;cmid=100965">CJ-2017-00023</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00023&amp;cmid=100965">ALLY BANK V. ROBERT FRANKLIN CUNNINGHAM SR, ET. AL.</a></td>
+    <td>CUNNINGHAM, CARLENE (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00023&amp;cmid=100965">CJ-2017-00023</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00023&amp;cmid=100965">ALLY BANK V. ROBERT FRANKLIN CUNNINGHAM SR, ET. AL.</a></td>
+    <td>CUNNINGHAM, ROBERT FRANKLIN SR (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00066&amp;cmid=99634">CF-2017-00066</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00066&amp;cmid=99634">STATE OF OKLAHOMA  V. KIMBERLY LA SHAI NABORS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00067&amp;cmid=99635">CF-2017-00067</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00067&amp;cmid=99635">STATE OF OKLAHOMA  V. KENNETH FELTON NABORS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00143&amp;cmid=99651">CM-2017-00143</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00143&amp;cmid=99651">STATE OF OKLAHOMA  V. KIMBERLY LA SHAI NABORS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00144&amp;cmid=99652">CM-2017-00144</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00144&amp;cmid=99652">STATE OF OKLAHOMA  V. KENNETH FELTON NABORS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00145&amp;cmid=99653">CM-2017-00145</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00145&amp;cmid=99653">STATE OF OKLAHOMA  V. JEREMY DAVID WILLIAMS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00023&amp;cmid=100965">CJ-2017-00023</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00023&amp;cmid=100965">ALLY BANK V. ROBERT FRANKLIN CUNNINGHAM SR, ET. AL.</a></td>
+    <td>HOOD &amp; STACY, P.A. (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00067&amp;cmid=99635">CF-2017-00067</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00067&amp;cmid=99635">STATE OF OKLAHOMA  V. KENNETH FELTON NABORS</a></td>
+    <td>MCGEE, FRITZ (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00144&amp;cmid=99652">CM-2017-00144</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00144&amp;cmid=99652">STATE OF OKLAHOMA  V. KENNETH FELTON NABORS</a></td>
+    <td>MCGEE, FRITZ (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00066&amp;cmid=99634">CF-2017-00066</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00066&amp;cmid=99634">STATE OF OKLAHOMA  V. KIMBERLY LA SHAI NABORS</a></td>
+    <td>MCNEIL, RYAN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00067&amp;cmid=99635">CF-2017-00067</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00067&amp;cmid=99635">STATE OF OKLAHOMA  V. KENNETH FELTON NABORS</a></td>
+    <td>MCNEIL, RYAN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00143&amp;cmid=99651">CM-2017-00143</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00143&amp;cmid=99651">STATE OF OKLAHOMA  V. KIMBERLY LA SHAI NABORS</a></td>
+    <td>MCNEIL, RYAN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00144&amp;cmid=99652">CM-2017-00144</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00144&amp;cmid=99652">STATE OF OKLAHOMA  V. KENNETH FELTON NABORS</a></td>
+    <td>MCNEIL, RYAN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00035&amp;cmid=94061">CS-2017-00035</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00035&amp;cmid=94061">MIDLAND FUNDING LLC V. JAIDEN  ALLEN</a></td>
+    <td>MIDLAND FUNDING LLC (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00067&amp;cmid=99635">CF-2017-00067</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00067&amp;cmid=99635">STATE OF OKLAHOMA  V. KENNETH FELTON NABORS</a></td>
+    <td>NABORS, KENNETH FELTON (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00144&amp;cmid=99652">CM-2017-00144</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00144&amp;cmid=99652">STATE OF OKLAHOMA  V. KENNETH FELTON NABORS</a></td>
+    <td>NABORS, KENNETH FELTON (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00066&amp;cmid=99634">CF-2017-00066</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00066&amp;cmid=99634">STATE OF OKLAHOMA  V. KIMBERLY LA SHAI NABORS</a></td>
+    <td>NABORS, KIMBERLY LA SHAI (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00143&amp;cmid=99651">CM-2017-00143</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00143&amp;cmid=99651">STATE OF OKLAHOMA  V. KIMBERLY LA SHAI NABORS</a></td>
+    <td>NABORS, KIMBERLY LA SHAI (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00035&amp;cmid=94061">CS-2017-00035</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00035&amp;cmid=94061">MIDLAND FUNDING LLC V. JAIDEN  ALLEN</a></td>
+    <td>NIXON, WILLIAM L. JR. (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00145&amp;cmid=99653">CM-2017-00145</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00145&amp;cmid=99653">STATE OF OKLAHOMA  V. JEREMY DAVID WILLIAMS</a></td>
+    <td>NUSSER, LOREN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00145&amp;cmid=99653">CM-2017-00145</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00145&amp;cmid=99653">STATE OF OKLAHOMA  V. JEREMY DAVID WILLIAMS</a></td>
+    <td>WILLIAMS, JEREMY DAVID (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00066&amp;cmid=99634">CF-2017-00066</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00066&amp;cmid=99634">STATE OF OKLAHOMA  V. KIMBERLY LA SHAI NABORS</a></td>
+    <td>WOMBLE, MICHAEL (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00143&amp;cmid=99651">CM-2017-00143</a></td>
+    <td>11/03/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00143&amp;cmid=99651">STATE OF OKLAHOMA  V. KIMBERLY LA SHAI NABORS</a></td>
+    <td>WOMBLE, MICHAEL (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00040&amp;cmid=95017">WL-2017-00040</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00040&amp;cmid=95017">STATE OF OKLAHOMA V. </a></td>
+    <td> (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00586&amp;cmid=97658">TR-2017-00586</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00586&amp;cmid=97658">STATE OF OKLAHOMA  V. SHAWN KIETH DIRDEN</a></td>
+    <td>ALFALFA CO. SHERIFF DEPT. (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00024&amp;cmid=94317">CJ-2017-00024</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00024&amp;cmid=94317">DOUGLAS EARL HUGHES V. JESSICA R. DILLON MERKLE, ET. AL.</a></td>
+    <td>BAYS, JEREMY (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00025&amp;cmid=95002">WL-2017-00025</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00025&amp;cmid=95002">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00026&amp;cmid=95003">WL-2017-00026</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00026&amp;cmid=95003">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00027&amp;cmid=95004">WL-2017-00027</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00027&amp;cmid=95004">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00028&amp;cmid=98589">WL-2017-00028</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00028&amp;cmid=98589">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00029&amp;cmid=98211">WL-2017-00029</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00029&amp;cmid=98211">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00030&amp;cmid=98590">WL-2017-00030</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00030&amp;cmid=98590">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00031&amp;cmid=95008">WL-2017-00031</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00031&amp;cmid=95008">STATE OF OKLAHOMA V. PORSHA LEANNE STATUM</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00032&amp;cmid=95009">WL-2017-00032</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00032&amp;cmid=95009">STATE OF OKLAHOMA V. TANNER MICAH MATNEY</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00033&amp;cmid=95010">WL-2017-00033</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00033&amp;cmid=95010">STATE OF OKLAHOMA V. CASEY HARRIS STINNET</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00034&amp;cmid=95011">WL-2017-00034</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00034&amp;cmid=95011">STATE OF OKLAHOMA V. MICHAEL DAMANE HOGG JR</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00035&amp;cmid=95012">WL-2017-00035</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00035&amp;cmid=95012">STATE OF OKLAHOMA V. MICHAEL DAMANE HOGG JR</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00036&amp;cmid=95013">WL-2017-00036</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00036&amp;cmid=95013">STATE OF OKLAHOMA V. RYAN KEITH KUCKENBECKER</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00040&amp;cmid=95017">WL-2017-00040</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00040&amp;cmid=95017">STATE OF OKLAHOMA V. </a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00025&amp;cmid=95002">WL-2017-00025</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00025&amp;cmid=95002">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00026&amp;cmid=95003">WL-2017-00026</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00026&amp;cmid=95003">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00027&amp;cmid=95004">WL-2017-00027</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00027&amp;cmid=95004">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00028&amp;cmid=98589">WL-2017-00028</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00028&amp;cmid=98589">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00029&amp;cmid=98211">WL-2017-00029</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00029&amp;cmid=98211">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00030&amp;cmid=98590">WL-2017-00030</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00030&amp;cmid=98590">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00031&amp;cmid=95008">WL-2017-00031</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00031&amp;cmid=95008">STATE OF OKLAHOMA V. PORSHA LEANNE STATUM</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00033&amp;cmid=95010">WL-2017-00033</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00033&amp;cmid=95010">STATE OF OKLAHOMA V. CASEY HARRIS STINNET</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00034&amp;cmid=95011">WL-2017-00034</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00034&amp;cmid=95011">STATE OF OKLAHOMA V. MICHAEL DAMANE HOGG JR</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00035&amp;cmid=95012">WL-2017-00035</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00035&amp;cmid=95012">STATE OF OKLAHOMA V. MICHAEL DAMANE HOGG JR</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00040&amp;cmid=95017">WL-2017-00040</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00040&amp;cmid=95017">STATE OF OKLAHOMA V. </a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00586&amp;cmid=97658">TR-2017-00586</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00586&amp;cmid=97658">STATE OF OKLAHOMA  V. SHAWN KIETH DIRDEN</a></td>
+    <td>DIRDEN, SHAWN KIETH (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00036&amp;cmid=100966">CS-2017-00036</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00036&amp;cmid=100966">FIRST NATIONAL BANK OF OMAHA V. BILLY  STANLEY</a></td>
+    <td>FIRST NATIONAL BANK OF OMAHA (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00586&amp;cmid=97658">TR-2017-00586</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00586&amp;cmid=97658">STATE OF OKLAHOMA  V. SHAWN KIETH DIRDEN</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00025&amp;cmid=95002">WL-2017-00025</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00025&amp;cmid=95002">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00026&amp;cmid=95003">WL-2017-00026</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00026&amp;cmid=95003">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00027&amp;cmid=95004">WL-2017-00027</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00027&amp;cmid=95004">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00028&amp;cmid=98589">WL-2017-00028</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00028&amp;cmid=98589">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00029&amp;cmid=98211">WL-2017-00029</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00029&amp;cmid=98211">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00030&amp;cmid=98590">WL-2017-00030</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00030&amp;cmid=98590">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00031&amp;cmid=95008">WL-2017-00031</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00031&amp;cmid=95008">STATE OF OKLAHOMA V. PORSHA LEANNE STATUM</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00032&amp;cmid=95009">WL-2017-00032</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00032&amp;cmid=95009">STATE OF OKLAHOMA V. TANNER MICAH MATNEY</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00033&amp;cmid=95010">WL-2017-00033</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00033&amp;cmid=95010">STATE OF OKLAHOMA V. CASEY HARRIS STINNET</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00034&amp;cmid=95011">WL-2017-00034</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00034&amp;cmid=95011">STATE OF OKLAHOMA V. MICHAEL DAMANE HOGG JR</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00035&amp;cmid=95012">WL-2017-00035</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00035&amp;cmid=95012">STATE OF OKLAHOMA V. MICHAEL DAMANE HOGG JR</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00036&amp;cmid=95013">WL-2017-00036</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00036&amp;cmid=95013">STATE OF OKLAHOMA V. RYAN KEITH KUCKENBECKER</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00040&amp;cmid=95017">WL-2017-00040</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00040&amp;cmid=95017">STATE OF OKLAHOMA V. </a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00034&amp;cmid=95011">WL-2017-00034</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00034&amp;cmid=95011">STATE OF OKLAHOMA V. MICHAEL DAMANE HOGG JR</a></td>
+    <td>HOGG, MICHAEL DAMANE JR (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00035&amp;cmid=95012">WL-2017-00035</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00035&amp;cmid=95012">STATE OF OKLAHOMA V. MICHAEL DAMANE HOGG JR</a></td>
+    <td>HOGG, MICHAEL DAMANE JR (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00036&amp;cmid=100966">CS-2017-00036</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00036&amp;cmid=100966">FIRST NATIONAL BANK OF OMAHA V. BILLY  STANLEY</a></td>
+    <td>HOOD &amp; STACY, P.A. (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00024&amp;cmid=94317">CJ-2017-00024</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00024&amp;cmid=94317">DOUGLAS EARL HUGHES V. JESSICA R. DILLON MERKLE, ET. AL.</a></td>
+    <td>HUGHES, DOUGLAS EARL (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00028&amp;cmid=98589">WL-2017-00028</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00028&amp;cmid=98589">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>KINGCADE, ERION NICHOLAS (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00029&amp;cmid=98211">WL-2017-00029</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00029&amp;cmid=98211">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>KINGCADE, ERION NICHOLAS (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00030&amp;cmid=98590">WL-2017-00030</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00030&amp;cmid=98590">STATE OF OKLAHOMA V. ERION NICHOLAS KINGCADE</a></td>
+    <td>KINGCADE, ERION NICHOLAS (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00036&amp;cmid=95013">WL-2017-00036</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00036&amp;cmid=95013">STATE OF OKLAHOMA V. RYAN KEITH KUCKENBECKER</a></td>
+    <td>KUCKENBECKER, RYAN KEITH (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00032&amp;cmid=95009">WL-2017-00032</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00032&amp;cmid=95009">STATE OF OKLAHOMA V. TANNER MICAH MATNEY</a></td>
+    <td>MATNEY, TANNER MICAH (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00024&amp;cmid=94317">CJ-2017-00024</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00024&amp;cmid=94317">DOUGLAS EARL HUGHES V. JESSICA R. DILLON MERKLE, ET. AL.</a></td>
+    <td>MERKLE, JESSICA R. DILLON (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00032&amp;cmid=95009">WL-2017-00032</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00032&amp;cmid=95009">STATE OF OKLAHOMA V. TANNER MICAH MATNEY</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00024&amp;cmid=94317">CJ-2017-00024</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00024&amp;cmid=94317">DOUGLAS EARL HUGHES V. JESSICA R. DILLON MERKLE, ET. AL.</a></td>
+    <td>PRO SE (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00586&amp;cmid=97658">TR-2017-00586</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00586&amp;cmid=97658">STATE OF OKLAHOMA  V. SHAWN KIETH DIRDEN</a></td>
+    <td>ROCKENBACH, T J (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00025&amp;cmid=95002">WL-2017-00025</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00025&amp;cmid=95002">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>SEAMAN, BRYSEN KEITH VINCENT (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00026&amp;cmid=95003">WL-2017-00026</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00026&amp;cmid=95003">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>SEAMAN, BRYSEN KEITH VINCENT (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00027&amp;cmid=95004">WL-2017-00027</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00027&amp;cmid=95004">STATE OF OKLAHOMA V. BRYSEN KEITH VINCENT SEAMAN</a></td>
+    <td>SEAMAN, BRYSEN KEITH VINCENT (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00036&amp;cmid=100966">CS-2017-00036</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00036&amp;cmid=100966">FIRST NATIONAL BANK OF OMAHA V. BILLY  STANLEY</a></td>
+    <td>STANLEY, BILLY (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00031&amp;cmid=95008">WL-2017-00031</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00031&amp;cmid=95008">STATE OF OKLAHOMA V. PORSHA LEANNE STATUM</a></td>
+    <td>STATUM, PORSHA LEANNE (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00033&amp;cmid=95010">WL-2017-00033</a></td>
+    <td>11/06/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00033&amp;cmid=95010">STATE OF OKLAHOMA V. CASEY HARRIS STINNET</a></td>
+    <td>STINNET, CASEY HARRIS (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00037&amp;cmid=99592">CS-2017-00037</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00037&amp;cmid=99592">N.A.  CAPITAL ONE BANK (USA) V. GLENDA D ROSE</a></td>
+    <td>CAPITAL ONE BANK (USA), N.A. (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00591&amp;cmid=97663">TR-2017-00591</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00591&amp;cmid=97663">STATE OF OKLAHOMA  V. RICK J FITZGERALD</a></td>
+    <td>FITZGERALD, RICK J (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00018&amp;cmid=98266">PB-2017-00018</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00018&amp;cmid=98266">IN THE MATTER OF: THE ESTATE OF HOLLEY LYNN HAMMER, DECEASED</a></td>
+    <td>HAMMER, HOLLEY LYNN (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00587&amp;cmid=97659">TR-2017-00587</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00587&amp;cmid=97659">STATE OF OKLAHOMA  V. BERNARD ELVIN WHEELER II</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00588&amp;cmid=98442">TR-2017-00588</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00588&amp;cmid=98442">STATE OF OKLAHOMA  V. JAYCI DEANN HOWERTON</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00589&amp;cmid=97661">TR-2017-00589</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00589&amp;cmid=97661">STATE OF OKLAHOMA  V. DAVID LEE SHIELDS III</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00590&amp;cmid=100459">TR-2017-00590</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00590&amp;cmid=100459">STATE OF OKLAHOMA  V. BENJAMIN THOMAS ROWLAND</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00591&amp;cmid=97663">TR-2017-00591</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00591&amp;cmid=97663">STATE OF OKLAHOMA  V. RICK J FITZGERALD</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00592&amp;cmid=99150">TR-2017-00592</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00592&amp;cmid=99150">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00588&amp;cmid=98442">TR-2017-00588</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00588&amp;cmid=98442">STATE OF OKLAHOMA  V. JAYCI DEANN HOWERTON</a></td>
+    <td>HOWERTON, JAYCI DEANN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00587&amp;cmid=97659">TR-2017-00587</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00587&amp;cmid=97659">STATE OF OKLAHOMA  V. BERNARD ELVIN WHEELER II</a></td>
+    <td>LANCASTER, DARRIN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00018&amp;cmid=98266">PB-2017-00018</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00018&amp;cmid=98266">IN THE MATTER OF: THE ESTATE OF HOLLEY LYNN HAMMER, DECEASED</a></td>
+    <td>MCGEE, FRITZ (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00019&amp;cmid=98267">PB-2017-00019</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00019&amp;cmid=98267">IN THE MATTER OF: THE ESTATE OF ANN  RETHERFORD, DECEASED</a></td>
+    <td>MCGEE, FRITZ (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00588&amp;cmid=98442">TR-2017-00588</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00588&amp;cmid=98442">STATE OF OKLAHOMA  V. JAYCI DEANN HOWERTON</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00589&amp;cmid=97661">TR-2017-00589</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00589&amp;cmid=97661">STATE OF OKLAHOMA  V. DAVID LEE SHIELDS III</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00590&amp;cmid=100459">TR-2017-00590</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00590&amp;cmid=100459">STATE OF OKLAHOMA  V. BENJAMIN THOMAS ROWLAND</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00591&amp;cmid=97663">TR-2017-00591</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00591&amp;cmid=97663">STATE OF OKLAHOMA  V. RICK J FITZGERALD</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00592&amp;cmid=99150">TR-2017-00592</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00592&amp;cmid=99150">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00587&amp;cmid=97659">TR-2017-00587</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00587&amp;cmid=97659">STATE OF OKLAHOMA  V. BERNARD ELVIN WHEELER II</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00588&amp;cmid=98442">TR-2017-00588</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00588&amp;cmid=98442">STATE OF OKLAHOMA  V. JAYCI DEANN HOWERTON</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00589&amp;cmid=97661">TR-2017-00589</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00589&amp;cmid=97661">STATE OF OKLAHOMA  V. DAVID LEE SHIELDS III</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00590&amp;cmid=100459">TR-2017-00590</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00590&amp;cmid=100459">STATE OF OKLAHOMA  V. BENJAMIN THOMAS ROWLAND</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00591&amp;cmid=97663">TR-2017-00591</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00591&amp;cmid=97663">STATE OF OKLAHOMA  V. RICK J FITZGERALD</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00592&amp;cmid=99150">TR-2017-00592</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00592&amp;cmid=99150">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00019&amp;cmid=98267">PB-2017-00019</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00019&amp;cmid=98267">IN THE MATTER OF: THE ESTATE OF ANN  RETHERFORD, DECEASED</a></td>
+    <td>RETHERFORD, ANN (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00037&amp;cmid=99592">CS-2017-00037</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00037&amp;cmid=99592">N.A.  CAPITAL ONE BANK (USA) V. GLENDA D ROSE</a></td>
+    <td>ROGERS, JOSEPH H. III (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00037&amp;cmid=99592">CS-2017-00037</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00037&amp;cmid=99592">N.A.  CAPITAL ONE BANK (USA) V. GLENDA D ROSE</a></td>
+    <td>ROSE, GLENDA D (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00590&amp;cmid=100459">TR-2017-00590</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00590&amp;cmid=100459">STATE OF OKLAHOMA  V. BENJAMIN THOMAS ROWLAND</a></td>
+    <td>ROWLAND, BENJAMIN THOMAS (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00589&amp;cmid=97661">TR-2017-00589</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00589&amp;cmid=97661">STATE OF OKLAHOMA  V. DAVID LEE SHIELDS III</a></td>
+    <td>SHIELDS, DAVID LEE III (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00592&amp;cmid=99150">TR-2017-00592</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00592&amp;cmid=99150">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>SOLIS, FRANQUY LYNN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00587&amp;cmid=97659">TR-2017-00587</a></td>
+    <td>11/07/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00587&amp;cmid=97659">STATE OF OKLAHOMA  V. BERNARD ELVIN WHEELER II</a></td>
+    <td>WHEELER, BERNARD ELVIN II (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td> (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00593&amp;cmid=97665">TR-2017-00593</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00593&amp;cmid=97665">STATE OF OKLAHOMA  V. JUDITH  MAPLES</a></td>
+    <td>ALFALFA CO. SHERIFF DEPT. (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00594&amp;cmid=98007">TR-2017-00594</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00594&amp;cmid=98007">STATE OF OKLAHOMA  V. PEGGIE SUE SIMONS</a></td>
+    <td>ALFALFA CO. SHERIFF DEPT. (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>ARP OKLAHOMA, LLC (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>BAILEY, MICHAEL (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>BOMHOFF, TIMOTHY J. (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>BROWN, ELISABETH D. (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>BROWN, VANCE (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>CHESAPEAKE OPERATING, INC (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>COULTER, CAROL RAY JR. (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>DEVOLL, GLENN A (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>DOBSON, JAY W (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00593&amp;cmid=97665">TR-2017-00593</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00593&amp;cmid=97665">STATE OF OKLAHOMA  V. JUDITH  MAPLES</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00594&amp;cmid=98007">TR-2017-00594</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00594&amp;cmid=98007">STATE OF OKLAHOMA  V. PEGGIE SUE SIMONS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>KEPHART, KEN (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>KEPHART, LUPE (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>LEPP, DONALD A (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00593&amp;cmid=97665">TR-2017-00593</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00593&amp;cmid=97665">STATE OF OKLAHOMA  V. JUDITH  MAPLES</a></td>
+    <td>LIEBSCH, GEORGE (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00594&amp;cmid=98007">TR-2017-00594</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00594&amp;cmid=98007">STATE OF OKLAHOMA  V. PEGGIE SUE SIMONS</a></td>
+    <td>LIEBSCH, GEORGE (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00593&amp;cmid=97665">TR-2017-00593</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00593&amp;cmid=97665">STATE OF OKLAHOMA  V. JUDITH  MAPLES</a></td>
+    <td>MAPLES, JUDITH (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>MCCOLLUM, JEFF (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>MIDSTATES PETROLEUM COMPANY (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>MONEY, ERIC C. (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>MUCKALA, ELISABETH E. (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>PRIMEXX OPERATING CORPORATION (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>SANDRIDGE EXPLORATION &amp; PRODUC (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00594&amp;cmid=98007">TR-2017-00594</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00594&amp;cmid=98007">STATE OF OKLAHOMA  V. PEGGIE SUE SIMONS</a></td>
+    <td>SIMONS, PEGGIE SUE (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>SMITH, MICHAEL E. (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>STEIN, PATRICK L (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>WOOLERY, J. TODD (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">CJ-2017-00025</a></td>
+    <td>11/08/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00025&amp;cmid=100363">LYNN  ZABILL, ET. AL. V. SANDRIDGE EXPLORATION &amp; PRODUC, ET. AL.</a></td>
+    <td>ZABILL, LYNN (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CV-2017-00018&amp;cmid=97898">CV-2017-00018</a></td>
+    <td>11/09/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CV-2017-00018&amp;cmid=97898">THE APPLICATION OF: PATTY ANN COOK, CIVIL MISCELLANEOUS</a></td>
+    <td>COOK, GEORGE W. (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CV-2017-00018&amp;cmid=97898">CV-2017-00018</a></td>
+    <td>11/09/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CV-2017-00018&amp;cmid=97898">THE APPLICATION OF: PATTY ANN COOK, CIVIL MISCELLANEOUS</a></td>
+    <td>COOK, PATTY ANN (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=FP-2017-00006&amp;cmid=100405">FP-2017-00006</a></td>
+    <td>11/09/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=FP-2017-00006&amp;cmid=100405">REBECCA ANN CRIDER V. DANIEL LEE JUMPER</a></td>
+    <td>CRIDER, REBECCA ANN (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=FP-2017-00006&amp;cmid=100405">FP-2017-00006</a></td>
+    <td>11/09/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=FP-2017-00006&amp;cmid=100405">REBECCA ANN CRIDER V. DANIEL LEE JUMPER</a></td>
+    <td>JUMPER, DANIEL LEE (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CV-2017-00018&amp;cmid=97898">CV-2017-00018</a></td>
+    <td>11/09/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CV-2017-00018&amp;cmid=97898">THE APPLICATION OF: PATTY ANN COOK, CIVIL MISCELLANEOUS</a></td>
+    <td>JUNGMAN, MARCUS A. (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CV-2017-00018&amp;cmid=97898">CV-2017-00018</a></td>
+    <td>11/09/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CV-2017-00018&amp;cmid=97898">THE APPLICATION OF: PATTY ANN COOK, CIVIL MISCELLANEOUS</a></td>
+    <td>LATZA, GENEVIEVE WAYNETTE (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=FP-2017-00006&amp;cmid=100405">FP-2017-00006</a></td>
+    <td>11/09/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=FP-2017-00006&amp;cmid=100405">REBECCA ANN CRIDER V. DANIEL LEE JUMPER</a></td>
+    <td>OHMANN, NICHOLAS A (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00595&amp;cmid=100810">TR-2017-00595</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00595&amp;cmid=100810">STATE OF OKLAHOMA  V. MASON ANDREW MCKEE</a></td>
+    <td>ALFALFA CO. SHERIFF DEPT. (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00601&amp;cmid=100460">TR-2017-00601</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00601&amp;cmid=100460">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>ALLEY, KIMBERLY CELESTE (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00602&amp;cmid=97674">TR-2017-00602</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00602&amp;cmid=97674">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>ALLEY, KIMBERLY CELESTE (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00603&amp;cmid=97675">TR-2017-00603</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00603&amp;cmid=97675">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>ALLEY, KIMBERLY CELESTE (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00596&amp;cmid=97762">TR-2017-00596</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00596&amp;cmid=97762">STATE OF OKLAHOMA  V. CARSON ANDREW MCCOLL</a></td>
+    <td>DEPT. OF TOURISM &amp; RECREATION (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00146&amp;cmid=100476">CM-2017-00146</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00146&amp;cmid=100476">STATE OF OKLAHOMA  V. BRANDON NOLAN HANKEY</a></td>
+    <td>DYKES, JIM (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00595&amp;cmid=100810">TR-2017-00595</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00595&amp;cmid=100810">STATE OF OKLAHOMA  V. MASON ANDREW MCKEE</a></td>
+    <td>EDWARDS, ERIC N (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00597&amp;cmid=98272">TR-2017-00597</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00597&amp;cmid=98272">STATE OF OKLAHOMA  V. KAYLA LEIGH ENLOE</a></td>
+    <td>ENLOE, KAYLA LEIGH (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00146&amp;cmid=100476">CM-2017-00146</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00146&amp;cmid=100476">STATE OF OKLAHOMA  V. BRANDON NOLAN HANKEY</a></td>
+    <td>HANKEY, BRANDON NOLAN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00146&amp;cmid=100476">CM-2017-00146</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00146&amp;cmid=100476">STATE OF OKLAHOMA  V. BRANDON NOLAN HANKEY</a></td>
+    <td>HELENA POLICE DEPT. (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00146&amp;cmid=100476">CM-2017-00146</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00146&amp;cmid=100476">STATE OF OKLAHOMA  V. BRANDON NOLAN HANKEY</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00595&amp;cmid=100810">TR-2017-00595</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00595&amp;cmid=100810">STATE OF OKLAHOMA  V. MASON ANDREW MCKEE</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00596&amp;cmid=97762">TR-2017-00596</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00596&amp;cmid=97762">STATE OF OKLAHOMA  V. CARSON ANDREW MCCOLL</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00597&amp;cmid=98272">TR-2017-00597</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00597&amp;cmid=98272">STATE OF OKLAHOMA  V. KAYLA LEIGH ENLOE</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00598&amp;cmid=98245">TR-2017-00598</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00598&amp;cmid=98245">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00599&amp;cmid=98246">TR-2017-00599</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00599&amp;cmid=98246">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00600&amp;cmid=100663">TR-2017-00600</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00600&amp;cmid=100663">STATE OF OKLAHOMA  V. COLTON CLAY HYDE</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00601&amp;cmid=100460">TR-2017-00601</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00601&amp;cmid=100460">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00602&amp;cmid=97674">TR-2017-00602</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00602&amp;cmid=97674">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00603&amp;cmid=97675">TR-2017-00603</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00603&amp;cmid=97675">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00600&amp;cmid=100663">TR-2017-00600</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00600&amp;cmid=100663">STATE OF OKLAHOMA  V. COLTON CLAY HYDE</a></td>
+    <td>HYDE, COLTON CLAY (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00595&amp;cmid=100810">TR-2017-00595</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00595&amp;cmid=100810">STATE OF OKLAHOMA  V. MASON ANDREW MCKEE</a></td>
+    <td>LIEBSCH, GEORGE (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00596&amp;cmid=97762">TR-2017-00596</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00596&amp;cmid=97762">STATE OF OKLAHOMA  V. CARSON ANDREW MCCOLL</a></td>
+    <td>MCCOLL, CARSON ANDREW (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00601&amp;cmid=100460">TR-2017-00601</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00601&amp;cmid=100460">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>MCCULLOUGH, RANDY (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00602&amp;cmid=97674">TR-2017-00602</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00602&amp;cmid=97674">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>MCCULLOUGH, RANDY (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00603&amp;cmid=97675">TR-2017-00603</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00603&amp;cmid=97675">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>MCCULLOUGH, RANDY (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00595&amp;cmid=100810">TR-2017-00595</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00595&amp;cmid=100810">STATE OF OKLAHOMA  V. MASON ANDREW MCKEE</a></td>
+    <td>MCKEE, MASON ANDREW (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00598&amp;cmid=98245">TR-2017-00598</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00598&amp;cmid=98245">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00599&amp;cmid=98246">TR-2017-00599</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00599&amp;cmid=98246">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00600&amp;cmid=100663">TR-2017-00600</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00600&amp;cmid=100663">STATE OF OKLAHOMA  V. COLTON CLAY HYDE</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00597&amp;cmid=98272">TR-2017-00597</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00597&amp;cmid=98272">STATE OF OKLAHOMA  V. KAYLA LEIGH ENLOE</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00598&amp;cmid=98245">TR-2017-00598</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00598&amp;cmid=98245">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00599&amp;cmid=98246">TR-2017-00599</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00599&amp;cmid=98246">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00600&amp;cmid=100663">TR-2017-00600</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00600&amp;cmid=100663">STATE OF OKLAHOMA  V. COLTON CLAY HYDE</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00601&amp;cmid=100460">TR-2017-00601</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00601&amp;cmid=100460">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00602&amp;cmid=97674">TR-2017-00602</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00602&amp;cmid=97674">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00603&amp;cmid=97675">TR-2017-00603</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00603&amp;cmid=97675">STATE OF OKLAHOMA  V. KIMBERLY CELESTE ALLEY</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00598&amp;cmid=98245">TR-2017-00598</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00598&amp;cmid=98245">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>SOLIS, FRANQUY LYNN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00599&amp;cmid=98246">TR-2017-00599</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00599&amp;cmid=98246">STATE OF OKLAHOMA  V. FRANQUY LYNN SOLIS</a></td>
+    <td>SOLIS, FRANQUY LYNN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00597&amp;cmid=98272">TR-2017-00597</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00597&amp;cmid=98272">STATE OF OKLAHOMA  V. KAYLA LEIGH ENLOE</a></td>
+    <td>STEELMAN, JEFF (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00596&amp;cmid=97762">TR-2017-00596</a></td>
+    <td>11/13/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00596&amp;cmid=97762">STATE OF OKLAHOMA  V. CARSON ANDREW MCCOLL</a></td>
+    <td>WEBSTER, RYAN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00068&amp;cmid=99636">CF-2017-00068</a></td>
+    <td>11/15/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00068&amp;cmid=99636">STATE OF OKLAHOMA  V. HEATHER JEAN SHARP</a></td>
+    <td>DISTRICT #26 INVESTIGATOR (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00068&amp;cmid=99636">CF-2017-00068</a></td>
+    <td>11/15/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00068&amp;cmid=99636">STATE OF OKLAHOMA  V. HEATHER JEAN SHARP</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00068&amp;cmid=99636">CF-2017-00068</a></td>
+    <td>11/15/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00068&amp;cmid=99636">STATE OF OKLAHOMA  V. HEATHER JEAN SHARP</a></td>
+    <td>MCGEE, FRITZ (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00068&amp;cmid=99636">CF-2017-00068</a></td>
+    <td>11/15/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00068&amp;cmid=99636">STATE OF OKLAHOMA  V. HEATHER JEAN SHARP</a></td>
+    <td>SHARP, HEATHER JEAN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00068&amp;cmid=99636">CF-2017-00068</a></td>
+    <td>11/15/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00068&amp;cmid=99636">STATE OF OKLAHOMA  V. HEATHER JEAN SHARP</a></td>
+    <td>TANIO, STEVE (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00604&amp;cmid=97676">TR-2017-00604</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00604&amp;cmid=97676">STATE OF OKLAHOMA  V. ERVIN K WILSON</a></td>
+    <td>ALFALFA CO. SHERIFF DEPT. (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00605&amp;cmid=100461">TR-2017-00605</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00605&amp;cmid=100461">STATE OF OKLAHOMA  V. JOHN A. GODWIN</a></td>
+    <td>ALFALFA CO. SHERIFF DEPT. (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00606&amp;cmid=97955">TR-2017-00606</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00606&amp;cmid=97955">STATE OF OKLAHOMA  V. JONATHAN TAYLOR DODD</a></td>
+    <td>ALFALFA CO. SHERIFF DEPT. (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00069&amp;cmid=100938">CF-2017-00069</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00069&amp;cmid=100938">STATE OF OKLAHOMA  V. MICHAEL EDWARD JAMES</a></td>
+    <td>ALLSUP, BLAYNE T. (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00069&amp;cmid=100938">CF-2017-00069</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00069&amp;cmid=100938">STATE OF OKLAHOMA  V. MICHAEL EDWARD JAMES</a></td>
+    <td>DISTRICT #26 INVESTIGATOR (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00606&amp;cmid=97955">TR-2017-00606</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00606&amp;cmid=97955">STATE OF OKLAHOMA  V. JONATHAN TAYLOR DODD</a></td>
+    <td>DODD, JONATHAN TAYLOR (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00605&amp;cmid=100461">TR-2017-00605</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00605&amp;cmid=100461">STATE OF OKLAHOMA  V. JOHN A. GODWIN</a></td>
+    <td>GODWIN, JOHN A. (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00069&amp;cmid=100938">CF-2017-00069</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00069&amp;cmid=100938">STATE OF OKLAHOMA  V. MICHAEL EDWARD JAMES</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00604&amp;cmid=97676">TR-2017-00604</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00604&amp;cmid=97676">STATE OF OKLAHOMA  V. ERVIN K WILSON</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00605&amp;cmid=100461">TR-2017-00605</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00605&amp;cmid=100461">STATE OF OKLAHOMA  V. JOHN A. GODWIN</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00606&amp;cmid=97955">TR-2017-00606</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00606&amp;cmid=97955">STATE OF OKLAHOMA  V. JONATHAN TAYLOR DODD</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00069&amp;cmid=100938">CF-2017-00069</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00069&amp;cmid=100938">STATE OF OKLAHOMA  V. MICHAEL EDWARD JAMES</a></td>
+    <td>JAMES, MICHAEL EDWARD (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00605&amp;cmid=100461">TR-2017-00605</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00605&amp;cmid=100461">STATE OF OKLAHOMA  V. JOHN A. GODWIN</a></td>
+    <td>LIEBSCH, GEORGE (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00606&amp;cmid=97955">TR-2017-00606</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00606&amp;cmid=97955">STATE OF OKLAHOMA  V. JONATHAN TAYLOR DODD</a></td>
+    <td>LIEBSCH, GEORGE (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00604&amp;cmid=97676">TR-2017-00604</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00604&amp;cmid=97676">STATE OF OKLAHOMA  V. ERVIN K WILSON</a></td>
+    <td>NUSSER, LOREN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00069&amp;cmid=100938">CF-2017-00069</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00069&amp;cmid=100938">STATE OF OKLAHOMA  V. MICHAEL EDWARD JAMES</a></td>
+    <td>TANIO, STEVE (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00604&amp;cmid=97676">TR-2017-00604</a></td>
+    <td>11/17/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00604&amp;cmid=97676">STATE OF OKLAHOMA  V. ERVIN K WILSON</a></td>
+    <td>WILSON, ERVIN K (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00609&amp;cmid=100462">TR-2017-00609</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00609&amp;cmid=100462">STATE OF OKLAHOMA  V. </a></td>
+    <td> (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00071&amp;cmid=99639">CF-2017-00071</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00071&amp;cmid=99639">STATE OF OKLAHOMA  V. SHAWN DALE SAULS</a></td>
+    <td>COTTRILL, ROBERT (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00148&amp;cmid=99656">CM-2017-00148</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00148&amp;cmid=99656">STATE OF OKLAHOMA  V. SHAWN DALE SAULS</a></td>
+    <td>COTTRILL, ROBERT (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00607&amp;cmid=100374">TR-2017-00607</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00607&amp;cmid=100374">STATE OF OKLAHOMA  V. TIMOTHY LEROY GRIM</a></td>
+    <td>GRIM, TIMOTHY LEROY (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00608&amp;cmid=97957">TR-2017-00608</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00608&amp;cmid=97957">STATE OF OKLAHOMA  V. TIMOTHY LEROY GRIM</a></td>
+    <td>GRIM, TIMOTHY LEROY (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00070&amp;cmid=101310">CF-2017-00070</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00070&amp;cmid=101310">STATE OF OKLAHOMA  V. LISA MARIA SAULS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00071&amp;cmid=99639">CF-2017-00071</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00071&amp;cmid=99639">STATE OF OKLAHOMA  V. SHAWN DALE SAULS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00147&amp;cmid=101313">CM-2017-00147</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00147&amp;cmid=101313">STATE OF OKLAHOMA  V. LISA MARIA SAULS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00148&amp;cmid=99656">CM-2017-00148</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00148&amp;cmid=99656">STATE OF OKLAHOMA  V. SHAWN DALE SAULS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00607&amp;cmid=100374">TR-2017-00607</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00607&amp;cmid=100374">STATE OF OKLAHOMA  V. TIMOTHY LEROY GRIM</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00608&amp;cmid=97957">TR-2017-00608</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00608&amp;cmid=97957">STATE OF OKLAHOMA  V. TIMOTHY LEROY GRIM</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00609&amp;cmid=100462">TR-2017-00609</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00609&amp;cmid=100462">STATE OF OKLAHOMA  V. </a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00070&amp;cmid=101310">CF-2017-00070</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00070&amp;cmid=101310">STATE OF OKLAHOMA  V. LISA MARIA SAULS</a></td>
+    <td>MCGEE, FRITZ (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00147&amp;cmid=101313">CM-2017-00147</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00147&amp;cmid=101313">STATE OF OKLAHOMA  V. LISA MARIA SAULS</a></td>
+    <td>MCGEE, FRITZ (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00070&amp;cmid=101310">CF-2017-00070</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00070&amp;cmid=101310">STATE OF OKLAHOMA  V. LISA MARIA SAULS</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00147&amp;cmid=101313">CM-2017-00147</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00147&amp;cmid=101313">STATE OF OKLAHOMA  V. LISA MARIA SAULS</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00609&amp;cmid=100462">TR-2017-00609</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00609&amp;cmid=100462">STATE OF OKLAHOMA  V. </a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00070&amp;cmid=101310">CF-2017-00070</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00070&amp;cmid=101310">STATE OF OKLAHOMA  V. LISA MARIA SAULS</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00071&amp;cmid=99639">CF-2017-00071</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00071&amp;cmid=99639">STATE OF OKLAHOMA  V. SHAWN DALE SAULS</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00147&amp;cmid=101313">CM-2017-00147</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00147&amp;cmid=101313">STATE OF OKLAHOMA  V. LISA MARIA SAULS</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00148&amp;cmid=99656">CM-2017-00148</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00148&amp;cmid=99656">STATE OF OKLAHOMA  V. SHAWN DALE SAULS</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00607&amp;cmid=100374">TR-2017-00607</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00607&amp;cmid=100374">STATE OF OKLAHOMA  V. TIMOTHY LEROY GRIM</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00608&amp;cmid=97957">TR-2017-00608</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00608&amp;cmid=97957">STATE OF OKLAHOMA  V. TIMOTHY LEROY GRIM</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00609&amp;cmid=100462">TR-2017-00609</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00609&amp;cmid=100462">STATE OF OKLAHOMA  V. </a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00070&amp;cmid=101310">CF-2017-00070</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00070&amp;cmid=101310">STATE OF OKLAHOMA  V. LISA MARIA SAULS</a></td>
+    <td>SAULS, LISA MARIA (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00147&amp;cmid=101313">CM-2017-00147</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00147&amp;cmid=101313">STATE OF OKLAHOMA  V. LISA MARIA SAULS</a></td>
+    <td>SAULS, LISA MARIA (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00071&amp;cmid=99639">CF-2017-00071</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00071&amp;cmid=99639">STATE OF OKLAHOMA  V. SHAWN DALE SAULS</a></td>
+    <td>SAULS, SHAWN DALE (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00148&amp;cmid=99656">CM-2017-00148</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CM-2017-00148&amp;cmid=99656">STATE OF OKLAHOMA  V. SHAWN DALE SAULS</a></td>
+    <td>SAULS, SHAWN DALE (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00607&amp;cmid=100374">TR-2017-00607</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00607&amp;cmid=100374">STATE OF OKLAHOMA  V. TIMOTHY LEROY GRIM</a></td>
+    <td>STEELMAN, JEFF (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00608&amp;cmid=97957">TR-2017-00608</a></td>
+    <td>11/20/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00608&amp;cmid=97957">STATE OF OKLAHOMA  V. TIMOTHY LEROY GRIM</a></td>
+    <td>STEELMAN, JEFF (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00610&amp;cmid=97682">TR-2017-00610</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00610&amp;cmid=97682">STATE OF OKLAHOMA  V. LATONA FAWN MORRILL</a></td>
+    <td>BARNEY, JUSTIN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00041&amp;cmid=100891">WL-2017-00041</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00041&amp;cmid=100891">STATE OF OKLAHOMA V. MICHAEL E. KINGCADE</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00042&amp;cmid=97604">WL-2017-00042</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00042&amp;cmid=97604">STATE OF OKLAHOMA V. MARK ALLEN ROSS</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00042&amp;cmid=97604">WL-2017-00042</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00042&amp;cmid=97604">STATE OF OKLAHOMA V. MARK ALLEN ROSS</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00610&amp;cmid=97682">TR-2017-00610</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00610&amp;cmid=97682">STATE OF OKLAHOMA  V. LATONA FAWN MORRILL</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00041&amp;cmid=100891">WL-2017-00041</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00041&amp;cmid=100891">STATE OF OKLAHOMA V. MICHAEL E. KINGCADE</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00042&amp;cmid=97604">WL-2017-00042</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00042&amp;cmid=97604">STATE OF OKLAHOMA V. MARK ALLEN ROSS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00041&amp;cmid=100891">WL-2017-00041</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00041&amp;cmid=100891">STATE OF OKLAHOMA V. MICHAEL E. KINGCADE</a></td>
+    <td>KINGCADE, MICHAEL E. (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00610&amp;cmid=97682">TR-2017-00610</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00610&amp;cmid=97682">STATE OF OKLAHOMA  V. LATONA FAWN MORRILL</a></td>
+    <td>MORRILL, LATONA FAWN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00610&amp;cmid=97682">TR-2017-00610</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00610&amp;cmid=97682">STATE OF OKLAHOMA  V. LATONA FAWN MORRILL</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00041&amp;cmid=100891">WL-2017-00041</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00041&amp;cmid=100891">STATE OF OKLAHOMA V. MICHAEL E. KINGCADE</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00042&amp;cmid=97604">WL-2017-00042</a></td>
+    <td>11/21/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00042&amp;cmid=97604">STATE OF OKLAHOMA V. MARK ALLEN ROSS</a></td>
+    <td>ROSS, MARK ALLEN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00073&amp;cmid=99641">CF-2017-00073</a></td>
+    <td>11/22/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00073&amp;cmid=99641">STATE OF OKLAHOMA  V. LESLIE JOVAN MCDONALD</a></td>
+    <td>CHEROKEE POLICE DEPARTMENT (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00072&amp;cmid=99640">CF-2017-00072</a></td>
+    <td>11/22/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00072&amp;cmid=99640">STATE OF OKLAHOMA  V. HEATHER JEAN SHARP</a></td>
+    <td>DISTRICT #26 INVESTIGATOR (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00020&amp;cmid=98978">PB-2017-00020</a></td>
+    <td>11/22/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00020&amp;cmid=98978">IN THE MATTER OF: THE ESTATE OF HAROLD  HARMON, DECEASED</a></td>
+    <td>HADWIGER, KYLE (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00020&amp;cmid=98978">PB-2017-00020</a></td>
+    <td>11/22/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PB-2017-00020&amp;cmid=98978">IN THE MATTER OF: THE ESTATE OF HAROLD  HARMON, DECEASED</a></td>
+    <td>HARMON, HAROLD (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00072&amp;cmid=99640">CF-2017-00072</a></td>
+    <td>11/22/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00072&amp;cmid=99640">STATE OF OKLAHOMA  V. HEATHER JEAN SHARP</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00073&amp;cmid=99641">CF-2017-00073</a></td>
+    <td>11/22/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00073&amp;cmid=99641">STATE OF OKLAHOMA  V. LESLIE JOVAN MCDONALD</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00073&amp;cmid=99641">CF-2017-00073</a></td>
+    <td>11/22/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00073&amp;cmid=99641">STATE OF OKLAHOMA  V. LESLIE JOVAN MCDONALD</a></td>
+    <td>MCDONALD, LESLIE JOVAN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00072&amp;cmid=99640">CF-2017-00072</a></td>
+    <td>11/22/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00072&amp;cmid=99640">STATE OF OKLAHOMA  V. HEATHER JEAN SHARP</a></td>
+    <td>MCGEE, FRITZ (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00073&amp;cmid=99641">CF-2017-00073</a></td>
+    <td>11/22/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00073&amp;cmid=99641">STATE OF OKLAHOMA  V. LESLIE JOVAN MCDONALD</a></td>
+    <td>MCNEIL, RYAN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00072&amp;cmid=99640">CF-2017-00072</a></td>
+    <td>11/22/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00072&amp;cmid=99640">STATE OF OKLAHOMA  V. HEATHER JEAN SHARP</a></td>
+    <td>SHARP, HEATHER JEAN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00072&amp;cmid=99640">CF-2017-00072</a></td>
+    <td>11/22/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CF-2017-00072&amp;cmid=99640">STATE OF OKLAHOMA  V. HEATHER JEAN SHARP</a></td>
+    <td>TANIO, STEVE (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00611&amp;cmid=100480">TR-2017-00611</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00611&amp;cmid=100480">STATE OF OKLAHOMA  V. COLBY CHRISTOPHER BOUZIDEN</a></td>
+    <td>BOUZIDEN, COLBY CHRISTOPHER (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00612&amp;cmid=101309">TR-2017-00612</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00612&amp;cmid=101309">STATE OF OKLAHOMA  V. COLBY CHRISTOPHER BOUZIDEN</a></td>
+    <td>BOUZIDEN, COLBY CHRISTOPHER (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00615&amp;cmid=101026">TR-2017-00615</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00615&amp;cmid=101026">STATE OF OKLAHOMA  V. JANE ANN MCDERMOTT</a></td>
+    <td>DEPT. OF TOURISM &amp; RECREATION (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=ML-2017-00022&amp;cmid=98583">ML-2017-00022</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=ML-2017-00022&amp;cmid=98583">IN RE: THE MARRIAGE OF EDWARD MICHAEL GREIG     AND     KALEIGH RAKEL SANBORN</a></td>
+    <td>GREIG, EDWARD MICHAEL (Applicant 1)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00611&amp;cmid=100480">TR-2017-00611</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00611&amp;cmid=100480">STATE OF OKLAHOMA  V. COLBY CHRISTOPHER BOUZIDEN</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00612&amp;cmid=101309">TR-2017-00612</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00612&amp;cmid=101309">STATE OF OKLAHOMA  V. COLBY CHRISTOPHER BOUZIDEN</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00613&amp;cmid=97685">TR-2017-00613</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00613&amp;cmid=97685">STATE OF OKLAHOMA  V. COOPER BRIGGS SUTHERLAND</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00614&amp;cmid=97686">TR-2017-00614</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00614&amp;cmid=97686">STATE OF OKLAHOMA  V. JOE ROBERT RICHARDSON</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00615&amp;cmid=101026">TR-2017-00615</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00615&amp;cmid=101026">STATE OF OKLAHOMA  V. JANE ANN MCDERMOTT</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00038&amp;cmid=95240">CS-2017-00038</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00038&amp;cmid=95240">LVNV FUNDING LLC V. TROY  LITTLE</a></td>
+    <td>JORDAN, RYAN S. (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00038&amp;cmid=95240">CS-2017-00038</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00038&amp;cmid=95240">LVNV FUNDING LLC V. TROY  LITTLE</a></td>
+    <td>LITTLE, TROY (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00038&amp;cmid=95240">CS-2017-00038</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00038&amp;cmid=95240">LVNV FUNDING LLC V. TROY  LITTLE</a></td>
+    <td>LVNV FUNDING LLC (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00611&amp;cmid=100480">TR-2017-00611</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00611&amp;cmid=100480">STATE OF OKLAHOMA  V. COLBY CHRISTOPHER BOUZIDEN</a></td>
+    <td>MATHEWS, CARTER (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00612&amp;cmid=101309">TR-2017-00612</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00612&amp;cmid=101309">STATE OF OKLAHOMA  V. COLBY CHRISTOPHER BOUZIDEN</a></td>
+    <td>MATHEWS, CARTER (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PO-2017-00031&amp;cmid=100243">PO-2017-00031</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PO-2017-00031&amp;cmid=100243">CHRISTOPHER J. MORRISON V. SAMUEL ALAN MAY JR, ET. AL.</a></td>
+    <td>MAY, SAMUEL ALAN JR (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00615&amp;cmid=101026">TR-2017-00615</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00615&amp;cmid=101026">STATE OF OKLAHOMA  V. JANE ANN MCDERMOTT</a></td>
+    <td>MCDERMOTT, JANE ANN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00613&amp;cmid=97685">TR-2017-00613</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00613&amp;cmid=97685">STATE OF OKLAHOMA  V. COOPER BRIGGS SUTHERLAND</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00614&amp;cmid=97686">TR-2017-00614</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00614&amp;cmid=97686">STATE OF OKLAHOMA  V. JOE ROBERT RICHARDSON</a></td>
+    <td>MORGAN, BROCK (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PO-2017-00031&amp;cmid=100243">PO-2017-00031</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PO-2017-00031&amp;cmid=100243">CHRISTOPHER J. MORRISON V. SAMUEL ALAN MAY JR, ET. AL.</a></td>
+    <td>MORRISON, CHRISTOPHER J. (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00611&amp;cmid=100480">TR-2017-00611</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00611&amp;cmid=100480">STATE OF OKLAHOMA  V. COLBY CHRISTOPHER BOUZIDEN</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00612&amp;cmid=101309">TR-2017-00612</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00612&amp;cmid=101309">STATE OF OKLAHOMA  V. COLBY CHRISTOPHER BOUZIDEN</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00613&amp;cmid=97685">TR-2017-00613</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00613&amp;cmid=97685">STATE OF OKLAHOMA  V. COOPER BRIGGS SUTHERLAND</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00614&amp;cmid=97686">TR-2017-00614</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00614&amp;cmid=97686">STATE OF OKLAHOMA  V. JOE ROBERT RICHARDSON</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00614&amp;cmid=97686">TR-2017-00614</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00614&amp;cmid=97686">STATE OF OKLAHOMA  V. JOE ROBERT RICHARDSON</a></td>
+    <td>RICHARDSON, JOE ROBERT (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00038&amp;cmid=95240">CS-2017-00038</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CS-2017-00038&amp;cmid=95240">LVNV FUNDING LLC V. TROY  LITTLE</a></td>
+    <td>ROGERS, JOSEPH H. III (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=ML-2017-00022&amp;cmid=98583">ML-2017-00022</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=ML-2017-00022&amp;cmid=98583">IN RE: THE MARRIAGE OF EDWARD MICHAEL GREIG     AND     KALEIGH RAKEL SANBORN</a></td>
+    <td>SANBORN, KALEIGH RAKEL (Applicant 2)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00613&amp;cmid=97685">TR-2017-00613</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00613&amp;cmid=97685">STATE OF OKLAHOMA  V. COOPER BRIGGS SUTHERLAND</a></td>
+    <td>SUTHERLAND, COOPER BRIGGS (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00615&amp;cmid=101026">TR-2017-00615</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00615&amp;cmid=101026">STATE OF OKLAHOMA  V. JANE ANN MCDERMOTT</a></td>
+    <td>WEBSTER, RYAN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PO-2017-00031&amp;cmid=100243">PO-2017-00031</a></td>
+    <td>11/27/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PO-2017-00031&amp;cmid=100243">CHRISTOPHER J. MORRISON V. SAMUEL ALAN MAY JR, ET. AL.</a></td>
+    <td>ZIMBELMAN, JUSTINA M (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00043&amp;cmid=96445">WL-2017-00043</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00043&amp;cmid=96445">STATE OF OKLAHOMA V. TATEYN R RIEGER</a></td>
+    <td>BICKERSTAFF, BEN (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00043&amp;cmid=96445">WL-2017-00043</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00043&amp;cmid=96445">STATE OF OKLAHOMA V. TATEYN R RIEGER</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00044&amp;cmid=95311">WL-2017-00044</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00044&amp;cmid=95311">STATE OF OKLAHOMA V. SAMUEL  GARRETT</a></td>
+    <td>DEPARTMENT OF WILDLIFE (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00027&amp;cmid=98020">CJ-2017-00027</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00027&amp;cmid=98020">FIRST STATE BANK OF KIOWA V. RHONDA LYNN PACKARD, ET. AL.</a></td>
+    <td>EZZELL, BEN (ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00027&amp;cmid=98020">CJ-2017-00027</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00027&amp;cmid=98020">FIRST STATE BANK OF KIOWA V. RHONDA LYNN PACKARD, ET. AL.</a></td>
+    <td>FIRST STATE BANK OF KIOWA (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00044&amp;cmid=95311">WL-2017-00044</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00044&amp;cmid=95311">STATE OF OKLAHOMA V. SAMUEL  GARRETT</a></td>
+    <td>GARRETT, SAMUEL (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00043&amp;cmid=96445">WL-2017-00043</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00043&amp;cmid=96445">STATE OF OKLAHOMA V. TATEYN R RIEGER</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00044&amp;cmid=95311">WL-2017-00044</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00044&amp;cmid=95311">STATE OF OKLAHOMA V. SAMUEL  GARRETT</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00027&amp;cmid=98020">CJ-2017-00027</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00027&amp;cmid=98020">FIRST STATE BANK OF KIOWA V. RHONDA LYNN PACKARD, ET. AL.</a></td>
+    <td>PACKARD, JUSTIN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00027&amp;cmid=98020">CJ-2017-00027</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=CJ-2017-00027&amp;cmid=98020">FIRST STATE BANK OF KIOWA V. RHONDA LYNN PACKARD, ET. AL.</a></td>
+    <td>PACKARD, RHONDA LYNN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00043&amp;cmid=96445">WL-2017-00043</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00043&amp;cmid=96445">STATE OF OKLAHOMA V. TATEYN R RIEGER</a></td>
+    <td>RIEGER, TATEYN R (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00044&amp;cmid=95311">WL-2017-00044</a></td>
+    <td>11/28/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00044&amp;cmid=95311">STATE OF OKLAHOMA V. SAMUEL  GARRETT</a></td>
+    <td>SWALLOW, TERRY (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00045&amp;cmid=97134">WL-2017-00045</a></td>
+    <td>11/29/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00045&amp;cmid=97134">STATE OF OKLAHOMA V. MATTHEW ALAN PHILLIPS</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00045&amp;cmid=97134">WL-2017-00045</a></td>
+    <td>11/29/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00045&amp;cmid=97134">STATE OF OKLAHOMA V. MATTHEW ALAN PHILLIPS</a></td>
+    <td>OKLAHOMA WILDLIFE CONS. FUND (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00045&amp;cmid=97134">WL-2017-00045</a></td>
+    <td>11/29/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00045&amp;cmid=97134">STATE OF OKLAHOMA V. MATTHEW ALAN PHILLIPS</a></td>
+    <td>PHILLIPS, MATTHEW ALAN (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00045&amp;cmid=97134">WL-2017-00045</a></td>
+    <td>11/29/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=WL-2017-00045&amp;cmid=97134">STATE OF OKLAHOMA V. MATTHEW ALAN PHILLIPS</a></td>
+    <td>SWALLOW, TERRY (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00616&amp;cmid=97688">TR-2017-00616</a></td>
+    <td>11/30/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00616&amp;cmid=97688">STATE OF OKLAHOMA  V. MATTHEW ERIC ARMSTRONG</a></td>
+    <td>ARMSTRONG, MATTHEW ERIC (Defendant)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PO-2017-00032&amp;cmid=100499">PO-2017-00032</a></td>
+    <td>11/30/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PO-2017-00032&amp;cmid=100499">KYMBERLI MICHELLE HAMIL V. CARL JOE SCHNEEBERGER</a></td>
+    <td>HAMIL, KYMBERLI MICHELLE (Plaintiff)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00616&amp;cmid=97688">TR-2017-00616</a></td>
+    <td>11/30/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00616&amp;cmid=97688">STATE OF OKLAHOMA  V. MATTHEW ERIC ARMSTRONG</a></td>
+    <td>HICKMAN, MEGAN (DISTRICT ATTORNEY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00616&amp;cmid=97688">TR-2017-00616</a></td>
+    <td>11/30/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00616&amp;cmid=97688">STATE OF OKLAHOMA  V. MATTHEW ERIC ARMSTRONG</a></td>
+    <td>MCCULLOUGH, RANDY (ARRESTING OFFICER)</td>
+  </tr>
+  <tr class="resultTableRow evenRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00616&amp;cmid=97688">TR-2017-00616</a></td>
+    <td>11/30/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=TR-2017-00616&amp;cmid=97688">STATE OF OKLAHOMA  V. MATTHEW ERIC ARMSTRONG</a></td>
+    <td>OKLAHOMA HIGHWAY PATROL (ARRESTING AGENCY)</td>
+  </tr>
+  <tr class="resultTableRow oddRow">
+    <td><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PO-2017-00032&amp;cmid=100499">PO-2017-00032</a></td>
+    <td>11/30/2017</td>
+    <td class="shortStyle"><a href="http://www.oscn.net/dockets/GetCaseInformation.aspx?db=alfalfa&amp;number=PO-2017-00032&amp;cmid=100499">KYMBERLI MICHELLE HAMIL V. CARL JOE SCHNEEBERGER</a></td>
+    <td>SCHNEEBERGER, CARL JOE (Defendant)</td>
+  </tr>
+</tbody></table>
+</div>
+</div>
+<div class="footer" style="position: absolute; bottom: 0px; width: 100%;">
+	<div class="container-fluid sized">
+		<div class="row-fluid">
+			<div class="contact-foot column span3">
+				<h6>oscn</h6>
+				<p>
+				EMAIL: <a href="mailto:webmaster@oscn.net">webmaster@oscn.net</a><br>
+				Oklahoma Judicial Center<br>
+				2100 N Lincoln Blvd.<br>
+				Oklahoma City, OK 73105</p>
+			</div>
+			<div class="courts-foot column span3">
+				<h6>courts</h6>
+				<ul class="footer-list">
+					<li><a href="http://www.oscn.net/oscn/schome/">Supreme Court of Oklahoma</a></li>
+					<li><a href="http://www.okcca.net/">Court of Criminal Appeals</a></li>					
+					<li><a class="pdf-link" target="_blank" href="http://www.oscn.net/static/osc-ojs-brochure-online.pdf">Court of Civil Appeals<span class="sr-only">PDF</span></a></li>
+					<li><a href="http://www.oscn.net/applications/oscn/start.asp?viewType=COURTS">District Courts</a></li>
+				</ul>
+			</div>
+			<div class="decisions-foot column span3">
+				<h6>decisions</h6>
+				<ul class="footer-list">
+					<li><a href="http://www.oscn.net/decisions/">New Decisions</a></li>
+					<li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKCSSC">Supreme Court of Oklahoma</a></li>
+					<li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKCSCR">Court of Criminal Appeals</a></li>
+					<li><a href="http://www.oscn.net/applications/oscn/Index.asp?ftdb=STOKCSCV">Court of Civil Appeals</a></li>
+				</ul>					
+			</div>
+			<div class="programs-foot column span3">
+				<h6>programs</h6>
+				<ul class="footer-list">
+					<li><a href="http://www.thesovereigntysymposium.com/splash.aspx">The Sovereignty Symposium</a></li>
+					<!--<li><a href="#">Access to Justice</a></li>-->
+					<li><a href="http://www.oscn.net/static/adr/default.aspx">Alternative Dispute Resolution</a></li>
+					<li><a href="http://www.oscn.net/static/adr/default.aspx">Early Settlement Mediation</a></li>
+					<li><a href="http://www.oscn.net/Sites/CourtImprovement/default.aspx">Children's Court Improvement Program (CIP)</a></li>
+					<li><a href="http://www.oscn.net/jnc/">Judicial Nominating Commission</a></li>
+					<li><a href="http://www.oscn.net/static/forms/aoc_forms/interpreter.asp">Certified Courtroom Interpreters</a></li>
+					<li><a href="http://www.oscn.net/static/forms/aoc_forms/csr.asp">Certified Shorthand Reporters</a></li>
+					<li><a href="http://www.oscn.net/pages/accessibility">Accessibility ADA</a></li>
+				</ul>					
+			</div>
+		</div>
+	</div>
+	<div class="shoes">
+		<div class="sized">
+			<ul>
+				<!--<li><a href="#">site map</a></li>
+				<li><a href="#">information</a></li>
+				-->
+				<li><a href="http://www.oscn.net/applications/oscn/SimpleHelp.asp?HelpContextID=84">Contact Us</a></li>
+				<li><a href="http://www.oscn.net/jobs/">Careers</a></li>
+				<li><a href="http://www.oscn.net/pages/accessibility">Accessibility ADA</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	</div>
+        <script src="oscn_files/jquery-1.js"></script>
+        <script src="oscn_files/bootstrap.js"></script>
+		<script src="oscn_files/adobe.js"></script>
+        <script src="oscn_files/navigation.js"></script>		
+        <script src="oscn_files/oscn.js"></script>	
+        <script src="oscn_files/table.js"></script>	
+
+<!--[if IE 7]>
+	<script>
+		var height = $(".home-banner").height();
+		$("#bg").height(height);
+	</script>
+<![endif]-->
+    
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="myModalLabel">Leaving OSCN</h4></div><div class="modal-body">This
+ link will take you to a third-party website. The Oklahoma Supreme Court
+ does not endorse the contents of the third-party website, and makes no 
+representations regarding the accuracy, completeness, or adequacy of the
+ materials found there. This link is provided only as a convenience to 
+you.</div><div class="modal-footer"><form><button type="button" class="btn btn-default" data-dismiss="modal">Stay on page</button><button type="button" class="btn btn-primary">Continue</button></form></div></div></div></div></body></html>

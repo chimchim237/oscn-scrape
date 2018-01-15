@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9d146b2-9011-4225-917d-9865a64b7cb2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/html-to-list.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/string-to-list.py" />
-      <change beforePath="$PROJECT_DIR$/obo.py" afterPath="$PROJECT_DIR$/obo.py" />
+    <list default="true" id="b9d146b2-9011-4225-917d-9865a64b7cb2" name="Default" comment="a working practice file">
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/count-list-items-1.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/get-keywords.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/html-to-freq.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/html-to-freq2.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/html-to-freq3.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/html-to-kwic.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/html-to-list1.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/html-to-pretty-print.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/save-webpage.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/save.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/useGetNGrams.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/write-html-2-mac.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/write-html-2-windows.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lessons/write-html.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/oscn.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/html-to-list.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/obo-t17800628-33.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/obo.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/save.webpage.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,6 +36,13 @@
   <component name="FileEditorManager">
     <leaf />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -26,11 +50,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/open-webpage.py" />
+        <option value="$PROJECT_DIR$/string-to-list.py" />
         <option value="$PROJECT_DIR$/save.webpage.py" />
         <option value="$PROJECT_DIR$/trial-content.py" />
-        <option value="$PROJECT_DIR$/string-to-list.py" />
-        <option value="$PROJECT_DIR$/obo.py" />
         <option value="$PROJECT_DIR$/html-to-list.py" />
+        <option value="$PROJECT_DIR$/obo.py" />
+        <option value="$PROJECT_DIR$/soup.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -77,6 +103,12 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lessons" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -89,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.html-to-list">
+  <component name="RunManager" selected="Python.soup">
     <configuration name="html-to-list" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -102,25 +134,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="oscn-scrape" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/html-to-list.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="open-webpage" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oscn-scrape" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/open-webpage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lessons/html-to-list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,6 +158,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="soup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="oscn-scrape" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/soup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="string-to-list" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -156,7 +188,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="oscn-scrape" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/string-to-list.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lessons/string-to-list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,26 +206,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="oscn-scrape" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trial-content.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lessons/trial-content.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.open-webpage" />
-      <item index="1" class="java.lang.String" itemvalue="Python.save.webpage" />
-      <item index="2" class="java.lang.String" itemvalue="Python.trial-content" />
-      <item index="3" class="java.lang.String" itemvalue="Python.string-to-list" />
-      <item index="4" class="java.lang.String" itemvalue="Python.html-to-list" />
+      <item index="0" class="java.lang.String" itemvalue="Python.save.webpage" />
+      <item index="1" class="java.lang.String" itemvalue="Python.trial-content" />
+      <item index="2" class="java.lang.String" itemvalue="Python.string-to-list" />
+      <item index="3" class="java.lang.String" itemvalue="Python.html-to-list" />
+      <item index="4" class="java.lang.String" itemvalue="Python.soup" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.html-to-list" />
-        <item index="1" class="java.lang.String" itemvalue="Python.string-to-list" />
+        <item index="0" class="java.lang.String" itemvalue="Python.soup" />
+        <item index="1" class="java.lang.String" itemvalue="Python.html-to-list" />
         <item index="2" class="java.lang.String" itemvalue="Python.trial-content" />
         <item index="3" class="java.lang.String" itemvalue="Python.save.webpage" />
-        <item index="4" class="java.lang.String" itemvalue="Python.open-webpage" />
+        <item index="4" class="java.lang.String" itemvalue="Python.string-to-list" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515899245371</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="a working practice file">
+      <created>1515993415396</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1515993415396</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -227,7 +266,7 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3019508" sideWeight="0.4939759" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298193" sideWeight="0.5029686" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298193" sideWeight="0.4970314" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25903615" sideWeight="0.4970314" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298193" sideWeight="0.49533504" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298193" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24512298" sideWeight="0.4939759" order="1" side_tool="false" content_ui="tabs" />
@@ -274,14 +313,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="programming historian - python lessons" />
-    <option name="LAST_COMMIT_MESSAGE" value="programming historian - python lessons" />
+    <MESSAGE value="a working practice file" />
+    <option name="LAST_COMMIT_MESSAGE" value="a working practice file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/open-webpage.py">
+    <entry file="file://$PROJECT_DIR$/lessons/open-webpage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
@@ -289,23 +329,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/save.webpage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trial-content.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/string-to-list.py">
+    <entry file="file://$PROJECT_DIR$/lessons/string-to-list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
@@ -313,19 +337,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html-to-list.py">
+    <entry file="file://$PROJECT_DIR$/save.webpage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="60">
+          <caret line="4" column="104" lean-forward="false" selection-start-line="4" selection-start-column="104" selection-end-line="4" selection-end-column="104" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/obo.py">
+    <entry file="file://$PROJECT_DIR$/lessons/html-to-list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lessons/trial-content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lessons/obo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2910">
+          <caret line="194" column="10" lean-forward="true" selection-start-line="194" selection-start-column="10" selection-end-line="194" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="148" lean-forward="false" selection-start-line="4" selection-start-column="148" selection-end-line="4" selection-end-column="148" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding>
+            <element signature="e#19#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
